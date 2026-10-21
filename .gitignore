@@ -9,3 +9,6 @@
 __pycache__/
 /lab01/report/preview/
 /lab01/report/compile-output.txt
+/deps/
+/lab02/report/preview/
+/lab02/report/compile-output.txt
