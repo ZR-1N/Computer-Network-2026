@@ -1,0 +1,31 @@
+TCP 聊天服务器 127.0.0.1:9001 | /quit 停止服务器
+[2026-10-21 23:24:55] JOIN CaptureA
+[2026-10-21 23:24:55] JOIN CaptureB
+[2026-10-21 23:24:55] JOIN CaptureC
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-00-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-01-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-02-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-03-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-04-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-05-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-06-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-07-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-08-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-09-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-10-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-11-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-12-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-13-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-14-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-15-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-16-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-17-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-18-Hello TCP
+[2026-10-21 23:24:55] CHAT CaptureA: 抓包验证-19-Hello TCP
+[2026-10-21 23:24:55] LEAVE CaptureA
+TCP_STATS peer=CaptureA BytesOut=1601 BytesIn=860 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:24:55] LEAVE CaptureB
+TCP_STATS peer=CaptureB BytesOut=1601 BytesIn=40 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:24:55] LEAVE CaptureC
+TCP_STATS peer=CaptureC BytesOut=1601 BytesIn=40 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

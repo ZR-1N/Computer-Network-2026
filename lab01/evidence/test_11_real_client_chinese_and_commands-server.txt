@@ -1,7 +1,7 @@
-TCP 聊天服务器 127.0.0.1:62124 | /quit 停止服务器
+TCP 聊天服务器 127.0.0.1:53069 | /quit 停止服务器
 TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:18] JOIN 客户端小明
-[2026-10-21 23:14:18] CHAT 客户端小明: 你好 Hello
-[2026-10-21 23:14:18] LEAVE 客户端小明
+[2026-10-21 23:30:42] JOIN 客户端小明
+[2026-10-21 23:30:42] CHAT 客户端小明: 你好 Hello
+[2026-10-21 23:30:42] LEAVE 客户端小明
 TCP_STATS peer=客户端小明 BytesOut=304 BytesIn=138 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 服务器已正常退出

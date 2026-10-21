@@ -1,0 +1,2 @@
+[06]8160.8C60::2026-10-21 23:24:55.127277100 [Microsoft-Windows-PktMon] 丢弃： PktGroupId 1688849860263937、PktNumber 1、外观 0、方向 Rx 、类型 IP 、组件 161、筛选 1、DropReason INET: FIN-WAIT2 、DropLocation 0xE000451E、OriginalSize 40、LoggedSize 40 
+[06]8160.2944::2026-10-21 23:24:55.127832400 [Microsoft-Windows-PktMon] 丢弃： PktGroupId 1688849860263938、PktNumber 1、外观 0、方向 Rx 、类型 IP 、组件 161、筛选 1、DropReason INET: FIN-WAIT2 、DropLocation 0xE000451E、OriginalSize 40、LoggedSize 40 

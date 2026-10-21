@@ -1,10 +1,10 @@
-TCP 聊天服务器 127.0.0.1:62085 | /quit 停止服务器
+TCP 聊天服务器 127.0.0.1:53028 | /quit 停止服务器
 TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:08] JOIN Alice
+[2026-10-21 23:30:32] JOIN Alice
 TCP_STATS peer= BytesOut=59 BytesIn=21 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:08] LEAVE Alice
+[2026-10-21 23:30:32] LEAVE Alice
 TCP_STATS peer=Alice BytesOut=96 BytesIn=37 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:08] JOIN Alice
-[2026-10-21 23:14:08] LEAVE Alice
+[2026-10-21 23:30:32] JOIN Alice
+[2026-10-21 23:30:32] LEAVE Alice
 TCP_STATS peer=Alice BytesOut=48 BytesIn=21 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 服务器已正常退出

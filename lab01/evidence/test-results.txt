@@ -14,6 +14,6 @@ test_13_repeated_connect_quit (__main__.ChatTest.test_13_repeated_connect_quit) 
 test_14_connection_capacity (__main__.ChatTest.test_14_connection_capacity) ... ok
 
 ----------------------------------------------------------------------
-Ran 14 tests in 18.228s
+Ran 14 tests in 17.989s
 
 OK

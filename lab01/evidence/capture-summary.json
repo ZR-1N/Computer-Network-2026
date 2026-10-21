@@ -1,0 +1,36 @@
+{
+  "tool": "Windows Pktmon",
+  "filter": "TCP port 9001",
+  "scope": "127.0.0.1 loopback",
+  "flow_packet_records": 0,
+  "drop_packet_records": 2,
+  "drop_reason": "INET: FIN-WAIT2",
+  "trace_events_lost": 0,
+  "workload_messages": 20,
+  "workload_deliveries": 60,
+  "packets": [
+    {
+      "source": "127.0.0.1",
+      "source_port": 58715,
+      "destination": "127.0.0.1",
+      "destination_port": 9001,
+      "flags": "0x10",
+      "seq": 335495763,
+      "ack": 2229109489,
+      "ip_bytes": 40,
+      "payload_bytes": 0
+    },
+    {
+      "source": "127.0.0.1",
+      "source_port": 58717,
+      "destination": "127.0.0.1",
+      "destination_port": 9001,
+      "flags": "0x10",
+      "seq": 821033220,
+      "ack": 2191743780,
+      "ip_bytes": 40,
+      "payload_bytes": 0
+    }
+  ],
+  "limitation": "Normal loopback flow was not exposed at this capture point; cannot infer a total packet loss rate."
+}

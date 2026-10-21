@@ -1,4 +1,4 @@
-TCP 聊天服务器 127.0.0.1:62090 | /quit 停止服务器
+TCP 聊天服务器 127.0.0.1:53033 | /quit 停止服务器
 TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 TCP_STATS peer= BytesOut=56 BytesIn=16 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 TCP_STATS peer= BytesOut=56 BytesIn=16 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0

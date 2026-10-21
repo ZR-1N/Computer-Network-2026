@@ -1,12 +1,12 @@
-TCP 聊天服务器 127.0.0.1:62077 | /quit 停止服务器
+TCP 聊天服务器 127.0.0.1:53018 | /quit 停止服务器
 TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:06] JOIN Alice
-[2026-10-21 23:14:06] JOIN Bob
-[2026-10-21 23:14:06] JOIN Carol
-[2026-10-21 23:14:07] LEAVE Alice
+[2026-10-21 23:30:31] JOIN Alice
+[2026-10-21 23:30:31] JOIN Bob
+[2026-10-21 23:30:31] JOIN Carol
+[2026-10-21 23:30:31] LEAVE Alice
 TCP_STATS peer=Alice BytesOut=257 BytesIn=81 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:07] LEAVE Bob
-TCP_STATS peer=Bob BytesOut=168 BytesIn=19 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:07] LEAVE Carol
+[2026-10-21 23:30:31] LEAVE Bob
+TCP_STATS peer=Bob BytesOut=200 BytesIn=19 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:30:31] LEAVE Carol
 TCP_STATS peer=Carol BytesOut=147 BytesIn=37 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 服务器已正常退出

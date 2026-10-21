@@ -1,9 +1,9 @@
-TCP 聊天服务器 127.0.0.1:62099 | /quit 停止服务器
+TCP 聊天服务器 127.0.0.1:53040 | /quit 停止服务器
 TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:09] JOIN Sequence
-[2026-10-21 23:14:09] LEAVE Sequence
+[2026-10-21 23:30:34] JOIN Sequence
+[2026-10-21 23:30:34] LEAVE Sequence
 TCP_STATS peer=Sequence BytesOut=124 BytesIn=43 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
-[2026-10-21 23:14:09] JOIN Direction
-[2026-10-21 23:14:09] LEAVE Direction
+[2026-10-21 23:30:34] JOIN Direction
+[2026-10-21 23:30:34] LEAVE Direction
 TCP_STATS peer=Direction BytesOut=122 BytesIn=44 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
 服务器已正常退出
