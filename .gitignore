@@ -1,0 +1,8 @@
+/build/
+/private-demo/
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+/dist/
