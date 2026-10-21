@@ -1,0 +1,14 @@
+STATE SYN_SENT session=e8fdc5bb51d9d874 bytes=2048 W=8
+STATE ESTABLISHED pipeline/selective-repeat
+RECV ACK base=1 sack=0x0
+RECV ACK base=2 sack=0x0
+RECV ACK base=2 sack=0x2
+RECV ACK base=2 sack=0x6
+RECV ACK base=2 sack=0xe
+RECV ACK base=2 sack=0x1e
+RECV ACK base=2 sack=0x3e
+RETRANSMIT DATA seq=2 ack_base=0 sack=0x0
+RECV ACK base=8 sack=0x0
+STATE FIN_WAIT data complete; retransmissions=1
+STATE TIME_WAIT receiver committed file, CRC32 verified
+STATE CLOSED transfer successful
