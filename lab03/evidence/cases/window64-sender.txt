@@ -1,0 +1,144 @@
+STATE SYN_SENT session=50c5e6555371ded8 bytes=80000 W=64
+SEND SYN seq=0 ack_base=0 sack=0x0
+SEND START seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED pipeline/selective-repeat
+SEND DATA seq=0 ack_base=0 sack=0x0
+SEND DATA seq=1 ack_base=0 sack=0x0
+SEND DATA seq=2 ack_base=0 sack=0x0
+SEND DATA seq=3 ack_base=0 sack=0x0
+SEND DATA seq=4 ack_base=0 sack=0x0
+SEND DATA seq=5 ack_base=0 sack=0x0
+SEND DATA seq=6 ack_base=0 sack=0x0
+SEND DATA seq=7 ack_base=0 sack=0x0
+SEND DATA seq=8 ack_base=0 sack=0x0
+SEND DATA seq=9 ack_base=0 sack=0x0
+SEND DATA seq=10 ack_base=0 sack=0x0
+SEND DATA seq=11 ack_base=0 sack=0x0
+SEND DATA seq=12 ack_base=0 sack=0x0
+SEND DATA seq=13 ack_base=0 sack=0x0
+SEND DATA seq=14 ack_base=0 sack=0x0
+SEND DATA seq=15 ack_base=0 sack=0x0
+SEND DATA seq=16 ack_base=0 sack=0x0
+SEND DATA seq=17 ack_base=0 sack=0x0
+SEND DATA seq=18 ack_base=0 sack=0x0
+SEND DATA seq=19 ack_base=0 sack=0x0
+SEND DATA seq=20 ack_base=0 sack=0x0
+SEND DATA seq=21 ack_base=0 sack=0x0
+SEND DATA seq=22 ack_base=0 sack=0x0
+SEND DATA seq=23 ack_base=0 sack=0x0
+SEND DATA seq=24 ack_base=0 sack=0x0
+SEND DATA seq=25 ack_base=0 sack=0x0
+SEND DATA seq=26 ack_base=0 sack=0x0
+SEND DATA seq=27 ack_base=0 sack=0x0
+SEND DATA seq=28 ack_base=0 sack=0x0
+SEND DATA seq=29 ack_base=0 sack=0x0
+SEND DATA seq=30 ack_base=0 sack=0x0
+SEND DATA seq=31 ack_base=0 sack=0x0
+SEND DATA seq=32 ack_base=0 sack=0x0
+SEND DATA seq=33 ack_base=0 sack=0x0
+SEND DATA seq=34 ack_base=0 sack=0x0
+SEND DATA seq=35 ack_base=0 sack=0x0
+SEND DATA seq=36 ack_base=0 sack=0x0
+SEND DATA seq=37 ack_base=0 sack=0x0
+SEND DATA seq=38 ack_base=0 sack=0x0
+SEND DATA seq=39 ack_base=0 sack=0x0
+SEND DATA seq=40 ack_base=0 sack=0x0
+SEND DATA seq=41 ack_base=0 sack=0x0
+SEND DATA seq=42 ack_base=0 sack=0x0
+SEND DATA seq=43 ack_base=0 sack=0x0
+SEND DATA seq=44 ack_base=0 sack=0x0
+SEND DATA seq=45 ack_base=0 sack=0x0
+SEND DATA seq=46 ack_base=0 sack=0x0
+SEND DATA seq=47 ack_base=0 sack=0x0
+SEND DATA seq=48 ack_base=0 sack=0x0
+SEND DATA seq=49 ack_base=0 sack=0x0
+SEND DATA seq=50 ack_base=0 sack=0x0
+SEND DATA seq=51 ack_base=0 sack=0x0
+SEND DATA seq=52 ack_base=0 sack=0x0
+SEND DATA seq=53 ack_base=0 sack=0x0
+SEND DATA seq=54 ack_base=0 sack=0x0
+SEND DATA seq=55 ack_base=0 sack=0x0
+SEND DATA seq=56 ack_base=0 sack=0x0
+SEND DATA seq=57 ack_base=0 sack=0x0
+SEND DATA seq=58 ack_base=0 sack=0x0
+SEND DATA seq=59 ack_base=0 sack=0x0
+SEND DATA seq=60 ack_base=0 sack=0x0
+SEND DATA seq=61 ack_base=0 sack=0x0
+SEND DATA seq=62 ack_base=0 sack=0x0
+SEND DATA seq=63 ack_base=0 sack=0x0
+RECV ACK base=1 sack=0x0
+SEND DATA seq=64 ack_base=0 sack=0x0
+RECV ACK base=2 sack=0x0
+SEND DATA seq=65 ack_base=0 sack=0x0
+RECV ACK base=3 sack=0x0
+SEND DATA seq=66 ack_base=0 sack=0x0
+RECV ACK base=4 sack=0x0
+RECV ACK base=5 sack=0x0
+RECV ACK base=6 sack=0x0
+RECV ACK base=7 sack=0x0
+RECV ACK base=8 sack=0x0
+RECV ACK base=9 sack=0x0
+RECV ACK base=10 sack=0x0
+RECV ACK base=11 sack=0x0
+RECV ACK base=12 sack=0x0
+RECV ACK base=13 sack=0x0
+RECV ACK base=14 sack=0x0
+RECV ACK base=15 sack=0x0
+RECV ACK base=16 sack=0x0
+RECV ACK base=17 sack=0x0
+RECV ACK base=18 sack=0x0
+RECV ACK base=19 sack=0x0
+RECV ACK base=20 sack=0x0
+RECV ACK base=21 sack=0x0
+RECV ACK base=22 sack=0x0
+RECV ACK base=23 sack=0x0
+RECV ACK base=24 sack=0x0
+RECV ACK base=25 sack=0x0
+RECV ACK base=26 sack=0x0
+RECV ACK base=27 sack=0x0
+RECV ACK base=28 sack=0x0
+RECV ACK base=29 sack=0x0
+RECV ACK base=30 sack=0x0
+RECV ACK base=31 sack=0x0
+RECV ACK base=32 sack=0x0
+RECV ACK base=33 sack=0x0
+RECV ACK base=34 sack=0x0
+RECV ACK base=35 sack=0x0
+RECV ACK base=36 sack=0x0
+RECV ACK base=37 sack=0x0
+RECV ACK base=38 sack=0x0
+RECV ACK base=39 sack=0x0
+RECV ACK base=40 sack=0x0
+RECV ACK base=41 sack=0x0
+RECV ACK base=42 sack=0x0
+RECV ACK base=43 sack=0x0
+RECV ACK base=44 sack=0x0
+RECV ACK base=45 sack=0x0
+RECV ACK base=46 sack=0x0
+RECV ACK base=47 sack=0x0
+RECV ACK base=48 sack=0x0
+RECV ACK base=49 sack=0x0
+RECV ACK base=50 sack=0x0
+RECV ACK base=51 sack=0x0
+RECV ACK base=52 sack=0x0
+RECV ACK base=53 sack=0x0
+RECV ACK base=54 sack=0x0
+RECV ACK base=55 sack=0x0
+RECV ACK base=56 sack=0x0
+RECV ACK base=57 sack=0x0
+RECV ACK base=58 sack=0x0
+RECV ACK base=59 sack=0x0
+RECV ACK base=60 sack=0x0
+RECV ACK base=61 sack=0x0
+RECV ACK base=62 sack=0x0
+RECV ACK base=63 sack=0x0
+RECV ACK base=64 sack=0x0
+RECV ACK base=65 sack=0x0
+RECV ACK base=66 sack=0x0
+RECV ACK base=67 sack=0x0
+STATE FIN_WAIT data complete; retransmissions=0
+SEND FIN seq=67 ack_base=0 sack=0x0
+SEND CLOSE_ACK seq=0 ack_base=0 sack=0x0
+STATE TIME_WAIT receiver committed file, CRC32 verified
+STATE CLOSED transfer successful
+RESULT {"role":"sender","success":true,"error":"","session":"50c5e6555371ded8","file_size":80000,"crc32":541302943,"window":64,"chunk":1200,"total_seconds":0.0056331,"data_seconds":0.0032224,"throughput_mib_s":13.5439,"throughput_mbit_s":113.614,"data_sent":67,"data_received":0,"retransmissions":0,"control_retries":0,"ack_sent":0,"ack_received":67,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":64,"max_buffered":0,"close_confirmed":true}

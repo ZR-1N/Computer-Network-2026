@@ -1,0 +1,5 @@
+STATE LISTEN fixed-window=4
+STATE SYN_RECEIVED session=1234567812345678 W=4
+STATE ESTABLISHED receiving into .part
+ERROR Final file length/CRC32 mismatch
+RESULT {"role":"receiver","success":false,"error":"Final file length/CRC32 mismatch","session":"1234567812345678","file_size":6,"crc32":1267612142,"window":4,"chunk":3,"total_seconds":0,"data_seconds":0,"throughput_mib_s":0,"throughput_mbit_s":0,"data_sent":0,"data_received":2,"retransmissions":0,"control_retries":0,"ack_sent":3,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":0,"max_buffered":1,"close_confirmed":false}

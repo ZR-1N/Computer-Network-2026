@@ -1,0 +1,2 @@
+RELAY_READY UDP bidirectional loss=0.200000 one_way_delay_ms=8
+RESULT {"role":"relay","received":311,"forwarded":253,"dropped":58,"corrupted":0,"duplicated":0,"max_queue":1,"pending_at_stop":0}

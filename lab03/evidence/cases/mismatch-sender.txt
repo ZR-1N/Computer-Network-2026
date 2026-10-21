@@ -1,0 +1,4 @@
+STATE SYN_SENT session=dc90191042cb73e5 bytes=1 W=4
+SEND SYN seq=0 ack_base=0 sack=0x0
+ERROR Peer RESET: Sender/receiver fixed window mismatch
+RESULT {"role":"sender","success":false,"error":"Peer RESET: Sender/receiver fixed window mismatch","session":"dc90191042cb73e5","file_size":1,"crc32":2363233923,"window":4,"chunk":1200,"total_seconds":0,"data_seconds":0,"throughput_mib_s":0,"throughput_mbit_s":0,"data_sent":0,"data_received":0,"retransmissions":0,"control_retries":0,"ack_sent":0,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":0,"max_buffered":0,"close_confirmed":false}

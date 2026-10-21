@@ -1,0 +1,19 @@
+STATE LISTEN fixed-window=4
+STATE SYN_RECEIVED session=a440a441dcf23e76 W=4
+SEND SYN_ACK seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED receiving into .part
+SEND ACK seq=0 ack_base=0 sack=0x0
+RECV DATA seq=0 base=0
+SEND ACK seq=0 ack_base=1 sack=0x0
+RECV DATA seq=1 base=1
+SEND ACK seq=0 ack_base=2 sack=0x0
+RECV DATA seq=2 base=2
+SEND ACK seq=0 ack_base=3 sack=0x0
+RECV DATA seq=3 base=3
+SEND ACK seq=0 ack_base=4 sack=0x0
+RECV DATA seq=3 base=4
+SEND ACK seq=0 ack_base=4 sack=0x0
+FILE_COMMITTED bytes=1024 CRC32=0x430d0aec
+SEND FIN_ACK seq=0 ack_base=0 sack=0x0
+STATE CLOSED close acknowledged
+RESULT {"role":"receiver","success":true,"error":"","session":"a440a441dcf23e76","file_size":1024,"crc32":1124928236,"window":4,"chunk":256,"total_seconds":0.126366,"data_seconds":0.125896,"throughput_mib_s":0.00772807,"throughput_mbit_s":0.0648277,"data_sent":0,"data_received":5,"retransmissions":0,"control_retries":0,"ack_sent":6,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":1,"out_of_order":0,"max_in_flight":0,"max_buffered":1,"close_confirmed":true}

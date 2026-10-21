@@ -1,0 +1,3 @@
+STATE SYN_SENT session=deee3cf484eeda9e bytes=4 W=16
+ERROR Retry limit in SYN
+RESULT {"role":"sender","success":false,"error":"Retry limit in SYN","session":"deee3cf484eeda9e","file_size":4,"crc32":3632233996,"window":16,"chunk":1200,"total_seconds":0,"data_seconds":0,"throughput_mib_s":0,"throughput_mbit_s":0,"data_sent":0,"data_received":0,"retransmissions":0,"control_retries":2,"ack_sent":0,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":0,"max_buffered":0,"close_confirmed":false}

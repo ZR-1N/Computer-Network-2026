@@ -1,0 +1,25 @@
+STATE LISTEN fixed-window=8
+STATE SYN_RECEIVED session=ea5a58d1cfae3e3b W=8
+SEND SYN_ACK seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED receiving into .part
+SEND ACK seq=0 ack_base=0 sack=0x0
+RECV DATA seq=1 base=0
+SEND ACK seq=0 ack_base=0 sack=0x2
+RECV DATA seq=2 base=0
+SEND ACK seq=0 ack_base=0 sack=0x6
+RECV DATA seq=3 base=0
+SEND ACK seq=0 ack_base=0 sack=0xe
+RECV DATA seq=4 base=0
+SEND ACK seq=0 ack_base=0 sack=0x1e
+RECV DATA seq=5 base=0
+SEND ACK seq=0 ack_base=0 sack=0x3e
+RECV DATA seq=6 base=0
+SEND ACK seq=0 ack_base=0 sack=0x7e
+RECV DATA seq=7 base=0
+SEND ACK seq=0 ack_base=0 sack=0xfe
+RECV DATA seq=0 base=0
+SEND ACK seq=0 ack_base=8 sack=0x0
+FILE_COMMITTED bytes=2048 CRC32=0x5f839533
+SEND FIN_ACK seq=0 ack_base=0 sack=0x0
+STATE CLOSED close acknowledged
+RESULT {"role":"receiver","success":true,"error":"","session":"ea5a58d1cfae3e3b","file_size":2048,"crc32":1602458931,"window":8,"chunk":256,"total_seconds":0.0787017,"data_seconds":0.0782501,"throughput_mib_s":0.0248168,"throughput_mbit_s":0.208178,"data_sent":0,"data_received":8,"retransmissions":0,"control_retries":0,"ack_sent":9,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":7,"max_in_flight":0,"max_buffered":8,"close_confirmed":true}

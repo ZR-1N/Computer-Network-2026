@@ -1,0 +1,9 @@
+RELAY_READY UDP bidirectional loss=0.000000 one_way_delay_ms=0
+RELAY_DROP SYN seq=0
+RELAY_DROP SYN_ACK seq=0
+RELAY_DROP START seq=0
+RELAY_DROP ACK seq=0
+RELAY_DROP FIN seq=1
+RELAY_DROP FIN_ACK seq=0
+RELAY_DROP CLOSE_ACK seq=0
+RESULT {"role":"relay","received":20,"forwarded":13,"dropped":7,"corrupted":0,"duplicated":0,"max_queue":1,"pending_at_stop":0}

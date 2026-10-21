@@ -1,0 +1,6 @@
+STATE LISTEN fixed-window=64
+STATE SYN_RECEIVED session=35d12795945135cd W=64
+STATE ESTABLISHED receiving into .part
+FILE_COMMITTED bytes=131072 CRC32=0xb17b3e8d
+STATE CLOSED close acknowledged
+RESULT {"role":"receiver","success":true,"error":"","session":"35d12795945135cd","file_size":131072,"crc32":2977644173,"window":64,"chunk":1200,"total_seconds":0.569002,"data_seconds":0.538168,"throughput_mib_s":0.219683,"throughput_mbit_s":1.84283,"data_sent":0,"data_received":110,"retransmissions":0,"control_retries":0,"ack_sent":111,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":80,"max_in_flight":0,"max_buffered":63,"close_confirmed":true}

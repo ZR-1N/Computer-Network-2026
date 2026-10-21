@@ -1,0 +1,137 @@
+STATE LISTEN fixed-window=16
+STATE SYN_RECEIVED session=cf5513ffc24e9a83 W=16
+SEND SYN_ACK seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED receiving into .part
+SEND ACK seq=0 ack_base=0 sack=0x0
+SEND ACK seq=0 ack_base=0 sack=0x0
+RECV DATA seq=5 base=0
+SEND ACK seq=0 ack_base=0 sack=0x20
+RECV DATA seq=12 base=0
+SEND ACK seq=0 ack_base=0 sack=0x1020
+RECV DATA seq=15 base=0
+SEND ACK seq=0 ack_base=0 sack=0x9020
+RECV DATA seq=3 base=0
+SEND ACK seq=0 ack_base=0 sack=0x9028
+RECV DATA seq=2 base=0
+SEND ACK seq=0 ack_base=0 sack=0x902c
+RECV DATA seq=4 base=0
+SEND ACK seq=0 ack_base=0 sack=0x903c
+RECV DATA seq=11 base=0
+SEND ACK seq=0 ack_base=0 sack=0x983c
+RECV DATA seq=6 base=0
+SEND ACK seq=0 ack_base=0 sack=0x987c
+RECV DATA seq=9 base=0
+SEND ACK seq=0 ack_base=0 sack=0x9a7c
+RECV DATA seq=10 base=0
+SEND ACK seq=0 ack_base=0 sack=0x9e7c
+RECV DATA seq=2 base=0
+SEND ACK seq=0 ack_base=0 sack=0x9e7c
+RECV DATA seq=14 base=0
+SEND ACK seq=0 ack_base=0 sack=0xde7c
+RECV DATA seq=1 base=0
+SEND ACK seq=0 ack_base=0 sack=0xde7e
+RECV DATA seq=7 base=0
+SEND ACK seq=0 ack_base=0 sack=0xdefe
+RECV DATA seq=8 base=0
+SEND ACK seq=0 ack_base=0 sack=0xdffe
+RECV DATA seq=10 base=0
+SEND ACK seq=0 ack_base=0 sack=0xdffe
+RECV DATA seq=14 base=0
+SEND ACK seq=0 ack_base=0 sack=0xdffe
+RECV DATA seq=0 base=0
+SEND ACK seq=0 ack_base=13 sack=0x6
+RECV DATA seq=13 base=13
+SEND ACK seq=0 ack_base=16 sack=0x0
+RECV DATA seq=18 base=16
+SEND ACK seq=0 ack_base=16 sack=0x4
+RECV DATA seq=28 base=16
+SEND ACK seq=0 ack_base=16 sack=0x1004
+RECV DATA seq=17 base=16
+SEND ACK seq=0 ack_base=16 sack=0x1006
+RECV DATA seq=24 base=16
+SEND ACK seq=0 ack_base=16 sack=0x1106
+RECV DATA seq=27 base=16
+SEND ACK seq=0 ack_base=16 sack=0x1906
+RECV DATA seq=19 base=16
+SEND ACK seq=0 ack_base=16 sack=0x190e
+RECV DATA seq=21 base=16
+SEND ACK seq=0 ack_base=16 sack=0x192e
+RECV DATA seq=22 base=16
+SEND ACK seq=0 ack_base=16 sack=0x196e
+RECV DATA seq=26 base=16
+SEND ACK seq=0 ack_base=16 sack=0x1d6e
+RECV DATA seq=16 base=16
+SEND ACK seq=0 ack_base=20 sack=0x1d6
+RECV DATA seq=20 base=20
+SEND ACK seq=0 ack_base=23 sack=0x3a
+RECV DATA seq=29 base=23
+SEND ACK seq=0 ack_base=23 sack=0x7a
+RECV DATA seq=31 base=23
+SEND ACK seq=0 ack_base=23 sack=0x17a
+RECV DATA seq=32 base=23
+SEND ACK seq=0 ack_base=23 sack=0x37a
+RECV DATA seq=34 base=23
+SEND ACK seq=0 ack_base=23 sack=0xb7a
+RECV DATA seq=33 base=23
+SEND ACK seq=0 ack_base=23 sack=0xf7a
+RECV DATA seq=38 base=23
+SEND ACK seq=0 ack_base=23 sack=0x8f7a
+RECV DATA seq=37 base=23
+SEND ACK seq=0 ack_base=23 sack=0xcf7a
+RECV DATA seq=25 base=23
+SEND ACK seq=0 ack_base=23 sack=0xcf7e
+RECV DATA seq=30 base=23
+SEND ACK seq=0 ack_base=23 sack=0xcffe
+RECV DATA seq=23 base=23
+SEND ACK seq=0 ack_base=35 sack=0xc
+RECV DATA seq=23 base=35
+SEND ACK seq=0 ack_base=35 sack=0xc
+RECV DATA seq=46 base=35
+SEND ACK seq=0 ack_base=35 sack=0x80c
+RECV DATA seq=36 base=35
+SEND ACK seq=0 ack_base=35 sack=0x80e
+RECV DATA seq=48 base=35
+SEND ACK seq=0 ack_base=35 sack=0x280e
+RECV DATA seq=46 base=35
+SEND ACK seq=0 ack_base=35 sack=0x280e
+RECV DATA seq=35 base=35
+SEND ACK seq=0 ack_base=39 sack=0x280
+RECV DATA seq=39 base=39
+SEND ACK seq=0 ack_base=40 sack=0x140
+RECV DATA seq=41 base=40
+SEND ACK seq=0 ack_base=40 sack=0x142
+RECV DATA seq=43 base=40
+SEND ACK seq=0 ack_base=40 sack=0x14a
+RECV DATA seq=44 base=40
+SEND ACK seq=0 ack_base=40 sack=0x15a
+RECV DATA seq=47 base=40
+SEND ACK seq=0 ack_base=40 sack=0x1da
+RECV DATA seq=40 base=40
+SEND ACK seq=0 ack_base=42 sack=0x76
+RECV DATA seq=53 base=42
+SEND ACK seq=0 ack_base=42 sack=0x876
+RECV DATA seq=52 base=42
+SEND ACK seq=0 ack_base=42 sack=0xc76
+RECV DATA seq=51 base=42
+SEND ACK seq=0 ack_base=42 sack=0xe76
+RECV DATA seq=54 base=42
+SEND ACK seq=0 ack_base=42 sack=0x1e76
+RECV DATA seq=42 base=42
+SEND ACK seq=0 ack_base=45 sack=0x3ce
+RECV DATA seq=45 base=45
+SEND ACK seq=0 ack_base=49 sack=0x3c
+RECV DATA seq=50 base=49
+SEND ACK seq=0 ack_base=49 sack=0x3e
+RECV DATA seq=54 base=49
+SEND ACK seq=0 ack_base=49 sack=0x3e
+RECV DATA seq=49 base=49
+SEND ACK seq=0 ack_base=55 sack=0x0
+RECV DATA seq=49 base=55
+SEND ACK seq=0 ack_base=55 sack=0x0
+RECV DATA seq=49 base=55
+SEND ACK seq=0 ack_base=55 sack=0x0
+FILE_COMMITTED bytes=65537 CRC32=0x82ce0be5
+SEND FIN_ACK seq=0 ack_base=0 sack=0x0
+RETRANSMIT FIN_ACK seq=0 ack_base=0 sack=0x0
+STATE CLOSED close acknowledged
+RESULT {"role":"receiver","success":true,"error":"","session":"cf5513ffc24e9a83","file_size":65537,"crc32":2194541541,"window":16,"chunk":1200,"total_seconds":0.912584,"data_seconds":0.881101,"throughput_mib_s":0.0684879,"throughput_mbit_s":0.574518,"data_sent":0,"data_received":63,"retransmissions":0,"control_retries":1,"ack_sent":65,"ack_received":0,"checksum_errors":4,"invalid_packets":0,"foreign_packets":0,"duplicates":8,"out_of_order":49,"max_in_flight":0,"max_buffered":15,"close_confirmed":true}

@@ -1,0 +1,20 @@
+RELAY_READY UDP bidirectional loss=0.100000 one_way_delay_ms=2
+RELAY_DROP DATA seq=0
+RELAY_DROP DATA seq=13
+RELAY_CORRUPT ACK seq=0
+RELAY_DROP DATA seq=23
+RELAY_DROP DATA seq=25
+RELAY_DROP DATA seq=30
+RELAY_CORRUPT DATA seq=35
+RELAY_CORRUPT DATA seq=36
+RELAY_DROP DATA seq=42
+RELAY_DROP DATA seq=45
+RELAY_DROP DATA seq=49
+RELAY_DROP DATA seq=50
+RELAY_DROP ACK seq=0
+RELAY_DROP ACK seq=0
+RELAY_CORRUPT DATA seq=49
+RELAY_DROP ACK seq=0
+RELAY_DROP FIN seq=55
+RELAY_DROP FIN_ACK seq=0
+RESULT {"role":"relay","received":142,"forwarded":141,"dropped":14,"corrupted":4,"duplicated":13,"max_queue":20,"pending_at_stop":0}

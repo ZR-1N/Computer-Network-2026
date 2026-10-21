@@ -1,0 +1,11 @@
+STATE LISTEN fixed-window=4
+STATE SYN_RECEIVED session=370f36a936f40703 W=4
+SEND SYN_ACK seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED receiving into .part
+SEND ACK seq=0 ack_base=0 sack=0x0
+RECV DATA seq=0 base=0
+SEND ACK seq=0 ack_base=1 sack=0x0
+FILE_COMMITTED bytes=1 CRC32=0xd202ef8d
+SEND FIN_ACK seq=0 ack_base=0 sack=0x0
+STATE CLOSED close acknowledged
+RESULT {"role":"receiver","success":true,"error":"","session":"370f36a936f40703","file_size":1,"crc32":3523407757,"window":4,"chunk":1200,"total_seconds":0.0024267,"data_seconds":0.0019292,"throughput_mib_s":0.000392992,"throughput_mbit_s":0.00329666,"data_sent":0,"data_received":1,"retransmissions":0,"control_retries":0,"ack_sent":2,"ack_received":0,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":0,"max_buffered":1,"close_confirmed":true}

@@ -1,0 +1,1758 @@
+STATE SYN_SENT session=831964166f2509f7 bytes=1048576 W=16
+SEND SYN seq=0 ack_base=0 sack=0x0
+SEND START seq=0 ack_base=0 sack=0x0
+STATE ESTABLISHED pipeline/selective-repeat
+SEND DATA seq=0 ack_base=0 sack=0x0
+SEND DATA seq=1 ack_base=0 sack=0x0
+SEND DATA seq=2 ack_base=0 sack=0x0
+SEND DATA seq=3 ack_base=0 sack=0x0
+SEND DATA seq=4 ack_base=0 sack=0x0
+SEND DATA seq=5 ack_base=0 sack=0x0
+SEND DATA seq=6 ack_base=0 sack=0x0
+SEND DATA seq=7 ack_base=0 sack=0x0
+SEND DATA seq=8 ack_base=0 sack=0x0
+SEND DATA seq=9 ack_base=0 sack=0x0
+SEND DATA seq=10 ack_base=0 sack=0x0
+SEND DATA seq=11 ack_base=0 sack=0x0
+SEND DATA seq=12 ack_base=0 sack=0x0
+SEND DATA seq=13 ack_base=0 sack=0x0
+SEND DATA seq=14 ack_base=0 sack=0x0
+SEND DATA seq=15 ack_base=0 sack=0x0
+RECV ACK base=1 sack=0x0
+SEND DATA seq=16 ack_base=0 sack=0x0
+RECV ACK base=2 sack=0x0
+SEND DATA seq=17 ack_base=0 sack=0x0
+RECV ACK base=3 sack=0x0
+SEND DATA seq=18 ack_base=0 sack=0x0
+RECV ACK base=4 sack=0x0
+SEND DATA seq=19 ack_base=0 sack=0x0
+RECV ACK base=5 sack=0x0
+SEND DATA seq=20 ack_base=0 sack=0x0
+RECV ACK base=6 sack=0x0
+SEND DATA seq=21 ack_base=0 sack=0x0
+RECV ACK base=7 sack=0x0
+SEND DATA seq=22 ack_base=0 sack=0x0
+RECV ACK base=8 sack=0x0
+SEND DATA seq=23 ack_base=0 sack=0x0
+RECV ACK base=9 sack=0x0
+SEND DATA seq=24 ack_base=0 sack=0x0
+RECV ACK base=10 sack=0x0
+SEND DATA seq=25 ack_base=0 sack=0x0
+RECV ACK base=11 sack=0x0
+SEND DATA seq=26 ack_base=0 sack=0x0
+RECV ACK base=12 sack=0x0
+SEND DATA seq=27 ack_base=0 sack=0x0
+RECV ACK base=13 sack=0x0
+SEND DATA seq=28 ack_base=0 sack=0x0
+RECV ACK base=14 sack=0x0
+SEND DATA seq=29 ack_base=0 sack=0x0
+RECV ACK base=15 sack=0x0
+SEND DATA seq=30 ack_base=0 sack=0x0
+RECV ACK base=16 sack=0x0
+SEND DATA seq=31 ack_base=0 sack=0x0
+RECV ACK base=17 sack=0x0
+SEND DATA seq=32 ack_base=0 sack=0x0
+RECV ACK base=18 sack=0x0
+SEND DATA seq=33 ack_base=0 sack=0x0
+RECV ACK base=19 sack=0x0
+SEND DATA seq=34 ack_base=0 sack=0x0
+RECV ACK base=20 sack=0x0
+SEND DATA seq=35 ack_base=0 sack=0x0
+RECV ACK base=21 sack=0x0
+SEND DATA seq=36 ack_base=0 sack=0x0
+RECV ACK base=22 sack=0x0
+SEND DATA seq=37 ack_base=0 sack=0x0
+RECV ACK base=23 sack=0x0
+SEND DATA seq=38 ack_base=0 sack=0x0
+RECV ACK base=24 sack=0x0
+SEND DATA seq=39 ack_base=0 sack=0x0
+RECV ACK base=25 sack=0x0
+SEND DATA seq=40 ack_base=0 sack=0x0
+RECV ACK base=26 sack=0x0
+SEND DATA seq=41 ack_base=0 sack=0x0
+RECV ACK base=27 sack=0x0
+SEND DATA seq=42 ack_base=0 sack=0x0
+RECV ACK base=28 sack=0x0
+SEND DATA seq=43 ack_base=0 sack=0x0
+RECV ACK base=29 sack=0x0
+SEND DATA seq=44 ack_base=0 sack=0x0
+RECV ACK base=30 sack=0x0
+SEND DATA seq=45 ack_base=0 sack=0x0
+RECV ACK base=31 sack=0x0
+SEND DATA seq=46 ack_base=0 sack=0x0
+RECV ACK base=32 sack=0x0
+SEND DATA seq=47 ack_base=0 sack=0x0
+RECV ACK base=33 sack=0x0
+SEND DATA seq=48 ack_base=0 sack=0x0
+RECV ACK base=34 sack=0x0
+SEND DATA seq=49 ack_base=0 sack=0x0
+RECV ACK base=35 sack=0x0
+SEND DATA seq=50 ack_base=0 sack=0x0
+RECV ACK base=36 sack=0x0
+SEND DATA seq=51 ack_base=0 sack=0x0
+RECV ACK base=37 sack=0x0
+SEND DATA seq=52 ack_base=0 sack=0x0
+RECV ACK base=38 sack=0x0
+SEND DATA seq=53 ack_base=0 sack=0x0
+RECV ACK base=39 sack=0x0
+SEND DATA seq=54 ack_base=0 sack=0x0
+RECV ACK base=40 sack=0x0
+SEND DATA seq=55 ack_base=0 sack=0x0
+RECV ACK base=41 sack=0x0
+SEND DATA seq=56 ack_base=0 sack=0x0
+RECV ACK base=42 sack=0x0
+SEND DATA seq=57 ack_base=0 sack=0x0
+RECV ACK base=43 sack=0x0
+SEND DATA seq=58 ack_base=0 sack=0x0
+RECV ACK base=44 sack=0x0
+SEND DATA seq=59 ack_base=0 sack=0x0
+RECV ACK base=45 sack=0x0
+SEND DATA seq=60 ack_base=0 sack=0x0
+RECV ACK base=46 sack=0x0
+SEND DATA seq=61 ack_base=0 sack=0x0
+RECV ACK base=47 sack=0x0
+SEND DATA seq=62 ack_base=0 sack=0x0
+RECV ACK base=48 sack=0x0
+SEND DATA seq=63 ack_base=0 sack=0x0
+RECV ACK base=49 sack=0x0
+SEND DATA seq=64 ack_base=0 sack=0x0
+RECV ACK base=50 sack=0x0
+SEND DATA seq=65 ack_base=0 sack=0x0
+RECV ACK base=51 sack=0x0
+SEND DATA seq=66 ack_base=0 sack=0x0
+RECV ACK base=52 sack=0x0
+SEND DATA seq=67 ack_base=0 sack=0x0
+RECV ACK base=53 sack=0x0
+SEND DATA seq=68 ack_base=0 sack=0x0
+RECV ACK base=54 sack=0x0
+SEND DATA seq=69 ack_base=0 sack=0x0
+RECV ACK base=55 sack=0x0
+SEND DATA seq=70 ack_base=0 sack=0x0
+RECV ACK base=56 sack=0x0
+SEND DATA seq=71 ack_base=0 sack=0x0
+RECV ACK base=57 sack=0x0
+SEND DATA seq=72 ack_base=0 sack=0x0
+RECV ACK base=58 sack=0x0
+SEND DATA seq=73 ack_base=0 sack=0x0
+RECV ACK base=59 sack=0x0
+SEND DATA seq=74 ack_base=0 sack=0x0
+RECV ACK base=60 sack=0x0
+SEND DATA seq=75 ack_base=0 sack=0x0
+RECV ACK base=61 sack=0x0
+SEND DATA seq=76 ack_base=0 sack=0x0
+RECV ACK base=62 sack=0x0
+SEND DATA seq=77 ack_base=0 sack=0x0
+RECV ACK base=63 sack=0x0
+SEND DATA seq=78 ack_base=0 sack=0x0
+RECV ACK base=64 sack=0x0
+SEND DATA seq=79 ack_base=0 sack=0x0
+RECV ACK base=65 sack=0x0
+SEND DATA seq=80 ack_base=0 sack=0x0
+RECV ACK base=66 sack=0x0
+SEND DATA seq=81 ack_base=0 sack=0x0
+RECV ACK base=67 sack=0x0
+SEND DATA seq=82 ack_base=0 sack=0x0
+RECV ACK base=68 sack=0x0
+SEND DATA seq=83 ack_base=0 sack=0x0
+RECV ACK base=69 sack=0x0
+SEND DATA seq=84 ack_base=0 sack=0x0
+RECV ACK base=70 sack=0x0
+SEND DATA seq=85 ack_base=0 sack=0x0
+RECV ACK base=71 sack=0x0
+SEND DATA seq=86 ack_base=0 sack=0x0
+RECV ACK base=72 sack=0x0
+SEND DATA seq=87 ack_base=0 sack=0x0
+RECV ACK base=73 sack=0x0
+SEND DATA seq=88 ack_base=0 sack=0x0
+RECV ACK base=74 sack=0x0
+SEND DATA seq=89 ack_base=0 sack=0x0
+RECV ACK base=75 sack=0x0
+SEND DATA seq=90 ack_base=0 sack=0x0
+RECV ACK base=76 sack=0x0
+SEND DATA seq=91 ack_base=0 sack=0x0
+RECV ACK base=77 sack=0x0
+SEND DATA seq=92 ack_base=0 sack=0x0
+RECV ACK base=78 sack=0x0
+SEND DATA seq=93 ack_base=0 sack=0x0
+RECV ACK base=79 sack=0x0
+SEND DATA seq=94 ack_base=0 sack=0x0
+RECV ACK base=80 sack=0x0
+SEND DATA seq=95 ack_base=0 sack=0x0
+RECV ACK base=81 sack=0x0
+SEND DATA seq=96 ack_base=0 sack=0x0
+RECV ACK base=82 sack=0x0
+SEND DATA seq=97 ack_base=0 sack=0x0
+RECV ACK base=83 sack=0x0
+SEND DATA seq=98 ack_base=0 sack=0x0
+RECV ACK base=84 sack=0x0
+SEND DATA seq=99 ack_base=0 sack=0x0
+RECV ACK base=85 sack=0x0
+SEND DATA seq=100 ack_base=0 sack=0x0
+RECV ACK base=86 sack=0x0
+SEND DATA seq=101 ack_base=0 sack=0x0
+RECV ACK base=87 sack=0x0
+SEND DATA seq=102 ack_base=0 sack=0x0
+RECV ACK base=88 sack=0x0
+SEND DATA seq=103 ack_base=0 sack=0x0
+RECV ACK base=89 sack=0x0
+SEND DATA seq=104 ack_base=0 sack=0x0
+RECV ACK base=90 sack=0x0
+SEND DATA seq=105 ack_base=0 sack=0x0
+RECV ACK base=91 sack=0x0
+SEND DATA seq=106 ack_base=0 sack=0x0
+RECV ACK base=92 sack=0x0
+SEND DATA seq=107 ack_base=0 sack=0x0
+RECV ACK base=93 sack=0x0
+SEND DATA seq=108 ack_base=0 sack=0x0
+RECV ACK base=94 sack=0x0
+SEND DATA seq=109 ack_base=0 sack=0x0
+RECV ACK base=95 sack=0x0
+SEND DATA seq=110 ack_base=0 sack=0x0
+RECV ACK base=96 sack=0x0
+SEND DATA seq=111 ack_base=0 sack=0x0
+RECV ACK base=97 sack=0x0
+SEND DATA seq=112 ack_base=0 sack=0x0
+RECV ACK base=98 sack=0x0
+SEND DATA seq=113 ack_base=0 sack=0x0
+RECV ACK base=99 sack=0x0
+SEND DATA seq=114 ack_base=0 sack=0x0
+RECV ACK base=100 sack=0x0
+SEND DATA seq=115 ack_base=0 sack=0x0
+RECV ACK base=101 sack=0x0
+SEND DATA seq=116 ack_base=0 sack=0x0
+RECV ACK base=102 sack=0x0
+SEND DATA seq=117 ack_base=0 sack=0x0
+RECV ACK base=103 sack=0x0
+SEND DATA seq=118 ack_base=0 sack=0x0
+RECV ACK base=104 sack=0x0
+SEND DATA seq=119 ack_base=0 sack=0x0
+RECV ACK base=105 sack=0x0
+SEND DATA seq=120 ack_base=0 sack=0x0
+RECV ACK base=106 sack=0x0
+SEND DATA seq=121 ack_base=0 sack=0x0
+RECV ACK base=107 sack=0x0
+SEND DATA seq=122 ack_base=0 sack=0x0
+RECV ACK base=108 sack=0x0
+SEND DATA seq=123 ack_base=0 sack=0x0
+RECV ACK base=109 sack=0x0
+SEND DATA seq=124 ack_base=0 sack=0x0
+RECV ACK base=110 sack=0x0
+SEND DATA seq=125 ack_base=0 sack=0x0
+RECV ACK base=111 sack=0x0
+SEND DATA seq=126 ack_base=0 sack=0x0
+RECV ACK base=112 sack=0x0
+SEND DATA seq=127 ack_base=0 sack=0x0
+RECV ACK base=113 sack=0x0
+SEND DATA seq=128 ack_base=0 sack=0x0
+RECV ACK base=114 sack=0x0
+SEND DATA seq=129 ack_base=0 sack=0x0
+RECV ACK base=115 sack=0x0
+SEND DATA seq=130 ack_base=0 sack=0x0
+RECV ACK base=116 sack=0x0
+SEND DATA seq=131 ack_base=0 sack=0x0
+RECV ACK base=117 sack=0x0
+SEND DATA seq=132 ack_base=0 sack=0x0
+RECV ACK base=118 sack=0x0
+SEND DATA seq=133 ack_base=0 sack=0x0
+RECV ACK base=119 sack=0x0
+SEND DATA seq=134 ack_base=0 sack=0x0
+RECV ACK base=120 sack=0x0
+SEND DATA seq=135 ack_base=0 sack=0x0
+RECV ACK base=121 sack=0x0
+SEND DATA seq=136 ack_base=0 sack=0x0
+RECV ACK base=122 sack=0x0
+SEND DATA seq=137 ack_base=0 sack=0x0
+RECV ACK base=123 sack=0x0
+SEND DATA seq=138 ack_base=0 sack=0x0
+RECV ACK base=124 sack=0x0
+SEND DATA seq=139 ack_base=0 sack=0x0
+RECV ACK base=125 sack=0x0
+SEND DATA seq=140 ack_base=0 sack=0x0
+RECV ACK base=126 sack=0x0
+SEND DATA seq=141 ack_base=0 sack=0x0
+RECV ACK base=127 sack=0x0
+SEND DATA seq=142 ack_base=0 sack=0x0
+RECV ACK base=128 sack=0x0
+SEND DATA seq=143 ack_base=0 sack=0x0
+RECV ACK base=129 sack=0x0
+SEND DATA seq=144 ack_base=0 sack=0x0
+RECV ACK base=130 sack=0x0
+SEND DATA seq=145 ack_base=0 sack=0x0
+RECV ACK base=131 sack=0x0
+SEND DATA seq=146 ack_base=0 sack=0x0
+RECV ACK base=132 sack=0x0
+SEND DATA seq=147 ack_base=0 sack=0x0
+RECV ACK base=133 sack=0x0
+SEND DATA seq=148 ack_base=0 sack=0x0
+RECV ACK base=134 sack=0x0
+SEND DATA seq=149 ack_base=0 sack=0x0
+RECV ACK base=135 sack=0x0
+SEND DATA seq=150 ack_base=0 sack=0x0
+RECV ACK base=136 sack=0x0
+SEND DATA seq=151 ack_base=0 sack=0x0
+RECV ACK base=137 sack=0x0
+SEND DATA seq=152 ack_base=0 sack=0x0
+RECV ACK base=138 sack=0x0
+SEND DATA seq=153 ack_base=0 sack=0x0
+RECV ACK base=139 sack=0x0
+SEND DATA seq=154 ack_base=0 sack=0x0
+RECV ACK base=140 sack=0x0
+SEND DATA seq=155 ack_base=0 sack=0x0
+RECV ACK base=141 sack=0x0
+SEND DATA seq=156 ack_base=0 sack=0x0
+RECV ACK base=142 sack=0x0
+SEND DATA seq=157 ack_base=0 sack=0x0
+RECV ACK base=143 sack=0x0
+SEND DATA seq=158 ack_base=0 sack=0x0
+RECV ACK base=144 sack=0x0
+SEND DATA seq=159 ack_base=0 sack=0x0
+RECV ACK base=145 sack=0x0
+SEND DATA seq=160 ack_base=0 sack=0x0
+RECV ACK base=146 sack=0x0
+SEND DATA seq=161 ack_base=0 sack=0x0
+RECV ACK base=147 sack=0x0
+SEND DATA seq=162 ack_base=0 sack=0x0
+RECV ACK base=148 sack=0x0
+SEND DATA seq=163 ack_base=0 sack=0x0
+RECV ACK base=149 sack=0x0
+SEND DATA seq=164 ack_base=0 sack=0x0
+RECV ACK base=150 sack=0x0
+SEND DATA seq=165 ack_base=0 sack=0x0
+RECV ACK base=151 sack=0x0
+SEND DATA seq=166 ack_base=0 sack=0x0
+RECV ACK base=152 sack=0x0
+SEND DATA seq=167 ack_base=0 sack=0x0
+RECV ACK base=153 sack=0x0
+SEND DATA seq=168 ack_base=0 sack=0x0
+RECV ACK base=154 sack=0x0
+SEND DATA seq=169 ack_base=0 sack=0x0
+RECV ACK base=155 sack=0x0
+SEND DATA seq=170 ack_base=0 sack=0x0
+RECV ACK base=156 sack=0x0
+SEND DATA seq=171 ack_base=0 sack=0x0
+RECV ACK base=157 sack=0x0
+SEND DATA seq=172 ack_base=0 sack=0x0
+RECV ACK base=158 sack=0x0
+SEND DATA seq=173 ack_base=0 sack=0x0
+RECV ACK base=159 sack=0x0
+SEND DATA seq=174 ack_base=0 sack=0x0
+RECV ACK base=160 sack=0x0
+SEND DATA seq=175 ack_base=0 sack=0x0
+RECV ACK base=161 sack=0x0
+SEND DATA seq=176 ack_base=0 sack=0x0
+RECV ACK base=162 sack=0x0
+SEND DATA seq=177 ack_base=0 sack=0x0
+RECV ACK base=163 sack=0x0
+SEND DATA seq=178 ack_base=0 sack=0x0
+RECV ACK base=164 sack=0x0
+SEND DATA seq=179 ack_base=0 sack=0x0
+RECV ACK base=165 sack=0x0
+SEND DATA seq=180 ack_base=0 sack=0x0
+RECV ACK base=166 sack=0x0
+SEND DATA seq=181 ack_base=0 sack=0x0
+RECV ACK base=167 sack=0x0
+SEND DATA seq=182 ack_base=0 sack=0x0
+RECV ACK base=168 sack=0x0
+SEND DATA seq=183 ack_base=0 sack=0x0
+RECV ACK base=169 sack=0x0
+SEND DATA seq=184 ack_base=0 sack=0x0
+RECV ACK base=170 sack=0x0
+SEND DATA seq=185 ack_base=0 sack=0x0
+RECV ACK base=171 sack=0x0
+SEND DATA seq=186 ack_base=0 sack=0x0
+RECV ACK base=172 sack=0x0
+SEND DATA seq=187 ack_base=0 sack=0x0
+RECV ACK base=173 sack=0x0
+SEND DATA seq=188 ack_base=0 sack=0x0
+RECV ACK base=174 sack=0x0
+SEND DATA seq=189 ack_base=0 sack=0x0
+RECV ACK base=175 sack=0x0
+SEND DATA seq=190 ack_base=0 sack=0x0
+RECV ACK base=176 sack=0x0
+SEND DATA seq=191 ack_base=0 sack=0x0
+RECV ACK base=177 sack=0x0
+SEND DATA seq=192 ack_base=0 sack=0x0
+RECV ACK base=178 sack=0x0
+SEND DATA seq=193 ack_base=0 sack=0x0
+RECV ACK base=179 sack=0x0
+SEND DATA seq=194 ack_base=0 sack=0x0
+RECV ACK base=180 sack=0x0
+SEND DATA seq=195 ack_base=0 sack=0x0
+RECV ACK base=181 sack=0x0
+SEND DATA seq=196 ack_base=0 sack=0x0
+RECV ACK base=182 sack=0x0
+SEND DATA seq=197 ack_base=0 sack=0x0
+RECV ACK base=183 sack=0x0
+SEND DATA seq=198 ack_base=0 sack=0x0
+RECV ACK base=184 sack=0x0
+SEND DATA seq=199 ack_base=0 sack=0x0
+RECV ACK base=185 sack=0x0
+SEND DATA seq=200 ack_base=0 sack=0x0
+RECV ACK base=186 sack=0x0
+SEND DATA seq=201 ack_base=0 sack=0x0
+RECV ACK base=187 sack=0x0
+SEND DATA seq=202 ack_base=0 sack=0x0
+RECV ACK base=188 sack=0x0
+SEND DATA seq=203 ack_base=0 sack=0x0
+RECV ACK base=189 sack=0x0
+SEND DATA seq=204 ack_base=0 sack=0x0
+RECV ACK base=190 sack=0x0
+SEND DATA seq=205 ack_base=0 sack=0x0
+RECV ACK base=191 sack=0x0
+SEND DATA seq=206 ack_base=0 sack=0x0
+RECV ACK base=192 sack=0x0
+SEND DATA seq=207 ack_base=0 sack=0x0
+RECV ACK base=193 sack=0x0
+SEND DATA seq=208 ack_base=0 sack=0x0
+RECV ACK base=194 sack=0x0
+SEND DATA seq=209 ack_base=0 sack=0x0
+RECV ACK base=195 sack=0x0
+SEND DATA seq=210 ack_base=0 sack=0x0
+RECV ACK base=196 sack=0x0
+SEND DATA seq=211 ack_base=0 sack=0x0
+RECV ACK base=197 sack=0x0
+SEND DATA seq=212 ack_base=0 sack=0x0
+RECV ACK base=198 sack=0x0
+SEND DATA seq=213 ack_base=0 sack=0x0
+RECV ACK base=199 sack=0x0
+SEND DATA seq=214 ack_base=0 sack=0x0
+RECV ACK base=200 sack=0x0
+SEND DATA seq=215 ack_base=0 sack=0x0
+RECV ACK base=201 sack=0x0
+SEND DATA seq=216 ack_base=0 sack=0x0
+RECV ACK base=202 sack=0x0
+SEND DATA seq=217 ack_base=0 sack=0x0
+RECV ACK base=203 sack=0x0
+SEND DATA seq=218 ack_base=0 sack=0x0
+RECV ACK base=204 sack=0x0
+SEND DATA seq=219 ack_base=0 sack=0x0
+RECV ACK base=205 sack=0x0
+SEND DATA seq=220 ack_base=0 sack=0x0
+RECV ACK base=206 sack=0x0
+SEND DATA seq=221 ack_base=0 sack=0x0
+RECV ACK base=207 sack=0x0
+SEND DATA seq=222 ack_base=0 sack=0x0
+RECV ACK base=208 sack=0x0
+SEND DATA seq=223 ack_base=0 sack=0x0
+RECV ACK base=209 sack=0x0
+SEND DATA seq=224 ack_base=0 sack=0x0
+RECV ACK base=210 sack=0x0
+SEND DATA seq=225 ack_base=0 sack=0x0
+RECV ACK base=211 sack=0x0
+SEND DATA seq=226 ack_base=0 sack=0x0
+RECV ACK base=212 sack=0x0
+SEND DATA seq=227 ack_base=0 sack=0x0
+RECV ACK base=213 sack=0x0
+SEND DATA seq=228 ack_base=0 sack=0x0
+RECV ACK base=214 sack=0x0
+SEND DATA seq=229 ack_base=0 sack=0x0
+RECV ACK base=215 sack=0x0
+SEND DATA seq=230 ack_base=0 sack=0x0
+RECV ACK base=216 sack=0x0
+SEND DATA seq=231 ack_base=0 sack=0x0
+RECV ACK base=217 sack=0x0
+SEND DATA seq=232 ack_base=0 sack=0x0
+RECV ACK base=218 sack=0x0
+SEND DATA seq=233 ack_base=0 sack=0x0
+RECV ACK base=219 sack=0x0
+SEND DATA seq=234 ack_base=0 sack=0x0
+RECV ACK base=220 sack=0x0
+SEND DATA seq=235 ack_base=0 sack=0x0
+RECV ACK base=221 sack=0x0
+SEND DATA seq=236 ack_base=0 sack=0x0
+RECV ACK base=222 sack=0x0
+SEND DATA seq=237 ack_base=0 sack=0x0
+RECV ACK base=223 sack=0x0
+SEND DATA seq=238 ack_base=0 sack=0x0
+RECV ACK base=224 sack=0x0
+SEND DATA seq=239 ack_base=0 sack=0x0
+RECV ACK base=225 sack=0x0
+SEND DATA seq=240 ack_base=0 sack=0x0
+RECV ACK base=226 sack=0x0
+SEND DATA seq=241 ack_base=0 sack=0x0
+RECV ACK base=227 sack=0x0
+SEND DATA seq=242 ack_base=0 sack=0x0
+RECV ACK base=228 sack=0x0
+SEND DATA seq=243 ack_base=0 sack=0x0
+RECV ACK base=229 sack=0x0
+SEND DATA seq=244 ack_base=0 sack=0x0
+RECV ACK base=230 sack=0x0
+SEND DATA seq=245 ack_base=0 sack=0x0
+RECV ACK base=231 sack=0x0
+SEND DATA seq=246 ack_base=0 sack=0x0
+RECV ACK base=232 sack=0x0
+SEND DATA seq=247 ack_base=0 sack=0x0
+RECV ACK base=233 sack=0x0
+SEND DATA seq=248 ack_base=0 sack=0x0
+RECV ACK base=234 sack=0x0
+SEND DATA seq=249 ack_base=0 sack=0x0
+RECV ACK base=235 sack=0x0
+SEND DATA seq=250 ack_base=0 sack=0x0
+RECV ACK base=236 sack=0x0
+SEND DATA seq=251 ack_base=0 sack=0x0
+RECV ACK base=237 sack=0x0
+SEND DATA seq=252 ack_base=0 sack=0x0
+RECV ACK base=238 sack=0x0
+SEND DATA seq=253 ack_base=0 sack=0x0
+RECV ACK base=239 sack=0x0
+SEND DATA seq=254 ack_base=0 sack=0x0
+RECV ACK base=240 sack=0x0
+SEND DATA seq=255 ack_base=0 sack=0x0
+RECV ACK base=241 sack=0x0
+SEND DATA seq=256 ack_base=0 sack=0x0
+RECV ACK base=242 sack=0x0
+SEND DATA seq=257 ack_base=0 sack=0x0
+RECV ACK base=243 sack=0x0
+SEND DATA seq=258 ack_base=0 sack=0x0
+RECV ACK base=244 sack=0x0
+SEND DATA seq=259 ack_base=0 sack=0x0
+RECV ACK base=245 sack=0x0
+SEND DATA seq=260 ack_base=0 sack=0x0
+RECV ACK base=246 sack=0x0
+SEND DATA seq=261 ack_base=0 sack=0x0
+RECV ACK base=247 sack=0x0
+SEND DATA seq=262 ack_base=0 sack=0x0
+RECV ACK base=248 sack=0x0
+SEND DATA seq=263 ack_base=0 sack=0x0
+RECV ACK base=249 sack=0x0
+SEND DATA seq=264 ack_base=0 sack=0x0
+RECV ACK base=250 sack=0x0
+SEND DATA seq=265 ack_base=0 sack=0x0
+RECV ACK base=251 sack=0x0
+SEND DATA seq=266 ack_base=0 sack=0x0
+RECV ACK base=252 sack=0x0
+SEND DATA seq=267 ack_base=0 sack=0x0
+RECV ACK base=253 sack=0x0
+SEND DATA seq=268 ack_base=0 sack=0x0
+RECV ACK base=254 sack=0x0
+SEND DATA seq=269 ack_base=0 sack=0x0
+RECV ACK base=255 sack=0x0
+SEND DATA seq=270 ack_base=0 sack=0x0
+RECV ACK base=256 sack=0x0
+SEND DATA seq=271 ack_base=0 sack=0x0
+RECV ACK base=257 sack=0x0
+SEND DATA seq=272 ack_base=0 sack=0x0
+RECV ACK base=258 sack=0x0
+SEND DATA seq=273 ack_base=0 sack=0x0
+RECV ACK base=259 sack=0x0
+SEND DATA seq=274 ack_base=0 sack=0x0
+RECV ACK base=260 sack=0x0
+SEND DATA seq=275 ack_base=0 sack=0x0
+RECV ACK base=261 sack=0x0
+SEND DATA seq=276 ack_base=0 sack=0x0
+RECV ACK base=262 sack=0x0
+SEND DATA seq=277 ack_base=0 sack=0x0
+RECV ACK base=263 sack=0x0
+SEND DATA seq=278 ack_base=0 sack=0x0
+RECV ACK base=264 sack=0x0
+SEND DATA seq=279 ack_base=0 sack=0x0
+RECV ACK base=265 sack=0x0
+SEND DATA seq=280 ack_base=0 sack=0x0
+RECV ACK base=266 sack=0x0
+SEND DATA seq=281 ack_base=0 sack=0x0
+RECV ACK base=267 sack=0x0
+SEND DATA seq=282 ack_base=0 sack=0x0
+RECV ACK base=268 sack=0x0
+SEND DATA seq=283 ack_base=0 sack=0x0
+RECV ACK base=269 sack=0x0
+SEND DATA seq=284 ack_base=0 sack=0x0
+RECV ACK base=270 sack=0x0
+SEND DATA seq=285 ack_base=0 sack=0x0
+RECV ACK base=271 sack=0x0
+SEND DATA seq=286 ack_base=0 sack=0x0
+RECV ACK base=272 sack=0x0
+SEND DATA seq=287 ack_base=0 sack=0x0
+RECV ACK base=273 sack=0x0
+SEND DATA seq=288 ack_base=0 sack=0x0
+RECV ACK base=274 sack=0x0
+SEND DATA seq=289 ack_base=0 sack=0x0
+RECV ACK base=275 sack=0x0
+SEND DATA seq=290 ack_base=0 sack=0x0
+RECV ACK base=276 sack=0x0
+SEND DATA seq=291 ack_base=0 sack=0x0
+RECV ACK base=277 sack=0x0
+SEND DATA seq=292 ack_base=0 sack=0x0
+RECV ACK base=278 sack=0x0
+SEND DATA seq=293 ack_base=0 sack=0x0
+RECV ACK base=279 sack=0x0
+SEND DATA seq=294 ack_base=0 sack=0x0
+RECV ACK base=280 sack=0x0
+SEND DATA seq=295 ack_base=0 sack=0x0
+RECV ACK base=281 sack=0x0
+SEND DATA seq=296 ack_base=0 sack=0x0
+RECV ACK base=282 sack=0x0
+SEND DATA seq=297 ack_base=0 sack=0x0
+RECV ACK base=283 sack=0x0
+SEND DATA seq=298 ack_base=0 sack=0x0
+RECV ACK base=284 sack=0x0
+SEND DATA seq=299 ack_base=0 sack=0x0
+RECV ACK base=285 sack=0x0
+SEND DATA seq=300 ack_base=0 sack=0x0
+RECV ACK base=286 sack=0x0
+SEND DATA seq=301 ack_base=0 sack=0x0
+RECV ACK base=287 sack=0x0
+SEND DATA seq=302 ack_base=0 sack=0x0
+RECV ACK base=288 sack=0x0
+SEND DATA seq=303 ack_base=0 sack=0x0
+RECV ACK base=289 sack=0x0
+SEND DATA seq=304 ack_base=0 sack=0x0
+RECV ACK base=290 sack=0x0
+SEND DATA seq=305 ack_base=0 sack=0x0
+RECV ACK base=291 sack=0x0
+SEND DATA seq=306 ack_base=0 sack=0x0
+RECV ACK base=292 sack=0x0
+SEND DATA seq=307 ack_base=0 sack=0x0
+RECV ACK base=293 sack=0x0
+SEND DATA seq=308 ack_base=0 sack=0x0
+RECV ACK base=294 sack=0x0
+SEND DATA seq=309 ack_base=0 sack=0x0
+RECV ACK base=295 sack=0x0
+SEND DATA seq=310 ack_base=0 sack=0x0
+RECV ACK base=296 sack=0x0
+SEND DATA seq=311 ack_base=0 sack=0x0
+RECV ACK base=297 sack=0x0
+SEND DATA seq=312 ack_base=0 sack=0x0
+RECV ACK base=298 sack=0x0
+SEND DATA seq=313 ack_base=0 sack=0x0
+RECV ACK base=299 sack=0x0
+SEND DATA seq=314 ack_base=0 sack=0x0
+RECV ACK base=300 sack=0x0
+SEND DATA seq=315 ack_base=0 sack=0x0
+RECV ACK base=301 sack=0x0
+SEND DATA seq=316 ack_base=0 sack=0x0
+RECV ACK base=302 sack=0x0
+SEND DATA seq=317 ack_base=0 sack=0x0
+RECV ACK base=303 sack=0x0
+SEND DATA seq=318 ack_base=0 sack=0x0
+RECV ACK base=304 sack=0x0
+SEND DATA seq=319 ack_base=0 sack=0x0
+RECV ACK base=305 sack=0x0
+SEND DATA seq=320 ack_base=0 sack=0x0
+RECV ACK base=306 sack=0x0
+SEND DATA seq=321 ack_base=0 sack=0x0
+RECV ACK base=307 sack=0x0
+SEND DATA seq=322 ack_base=0 sack=0x0
+RECV ACK base=308 sack=0x0
+SEND DATA seq=323 ack_base=0 sack=0x0
+RECV ACK base=309 sack=0x0
+SEND DATA seq=324 ack_base=0 sack=0x0
+RECV ACK base=310 sack=0x0
+SEND DATA seq=325 ack_base=0 sack=0x0
+RECV ACK base=311 sack=0x0
+SEND DATA seq=326 ack_base=0 sack=0x0
+RECV ACK base=312 sack=0x0
+SEND DATA seq=327 ack_base=0 sack=0x0
+RECV ACK base=313 sack=0x0
+SEND DATA seq=328 ack_base=0 sack=0x0
+RECV ACK base=314 sack=0x0
+SEND DATA seq=329 ack_base=0 sack=0x0
+RECV ACK base=315 sack=0x0
+SEND DATA seq=330 ack_base=0 sack=0x0
+RECV ACK base=316 sack=0x0
+SEND DATA seq=331 ack_base=0 sack=0x0
+RECV ACK base=317 sack=0x0
+SEND DATA seq=332 ack_base=0 sack=0x0
+RECV ACK base=318 sack=0x0
+SEND DATA seq=333 ack_base=0 sack=0x0
+RECV ACK base=319 sack=0x0
+SEND DATA seq=334 ack_base=0 sack=0x0
+RECV ACK base=320 sack=0x0
+SEND DATA seq=335 ack_base=0 sack=0x0
+RECV ACK base=321 sack=0x0
+SEND DATA seq=336 ack_base=0 sack=0x0
+RECV ACK base=322 sack=0x0
+SEND DATA seq=337 ack_base=0 sack=0x0
+RECV ACK base=323 sack=0x0
+SEND DATA seq=338 ack_base=0 sack=0x0
+RECV ACK base=324 sack=0x0
+SEND DATA seq=339 ack_base=0 sack=0x0
+RECV ACK base=325 sack=0x0
+SEND DATA seq=340 ack_base=0 sack=0x0
+RECV ACK base=326 sack=0x0
+SEND DATA seq=341 ack_base=0 sack=0x0
+RECV ACK base=327 sack=0x0
+SEND DATA seq=342 ack_base=0 sack=0x0
+RECV ACK base=328 sack=0x0
+SEND DATA seq=343 ack_base=0 sack=0x0
+RECV ACK base=329 sack=0x0
+SEND DATA seq=344 ack_base=0 sack=0x0
+RECV ACK base=330 sack=0x0
+SEND DATA seq=345 ack_base=0 sack=0x0
+RECV ACK base=331 sack=0x0
+SEND DATA seq=346 ack_base=0 sack=0x0
+RECV ACK base=332 sack=0x0
+SEND DATA seq=347 ack_base=0 sack=0x0
+RECV ACK base=333 sack=0x0
+SEND DATA seq=348 ack_base=0 sack=0x0
+RECV ACK base=334 sack=0x0
+SEND DATA seq=349 ack_base=0 sack=0x0
+RECV ACK base=335 sack=0x0
+SEND DATA seq=350 ack_base=0 sack=0x0
+RECV ACK base=336 sack=0x0
+SEND DATA seq=351 ack_base=0 sack=0x0
+RECV ACK base=337 sack=0x0
+SEND DATA seq=352 ack_base=0 sack=0x0
+RECV ACK base=338 sack=0x0
+SEND DATA seq=353 ack_base=0 sack=0x0
+RECV ACK base=339 sack=0x0
+SEND DATA seq=354 ack_base=0 sack=0x0
+RECV ACK base=340 sack=0x0
+SEND DATA seq=355 ack_base=0 sack=0x0
+RECV ACK base=341 sack=0x0
+SEND DATA seq=356 ack_base=0 sack=0x0
+RECV ACK base=342 sack=0x0
+SEND DATA seq=357 ack_base=0 sack=0x0
+RECV ACK base=343 sack=0x0
+SEND DATA seq=358 ack_base=0 sack=0x0
+RECV ACK base=344 sack=0x0
+SEND DATA seq=359 ack_base=0 sack=0x0
+RECV ACK base=345 sack=0x0
+SEND DATA seq=360 ack_base=0 sack=0x0
+RECV ACK base=346 sack=0x0
+SEND DATA seq=361 ack_base=0 sack=0x0
+RECV ACK base=347 sack=0x0
+SEND DATA seq=362 ack_base=0 sack=0x0
+RECV ACK base=348 sack=0x0
+SEND DATA seq=363 ack_base=0 sack=0x0
+RECV ACK base=349 sack=0x0
+SEND DATA seq=364 ack_base=0 sack=0x0
+RECV ACK base=350 sack=0x0
+SEND DATA seq=365 ack_base=0 sack=0x0
+RECV ACK base=351 sack=0x0
+SEND DATA seq=366 ack_base=0 sack=0x0
+RECV ACK base=352 sack=0x0
+SEND DATA seq=367 ack_base=0 sack=0x0
+RECV ACK base=353 sack=0x0
+SEND DATA seq=368 ack_base=0 sack=0x0
+RECV ACK base=354 sack=0x0
+SEND DATA seq=369 ack_base=0 sack=0x0
+RECV ACK base=355 sack=0x0
+SEND DATA seq=370 ack_base=0 sack=0x0
+RECV ACK base=356 sack=0x0
+SEND DATA seq=371 ack_base=0 sack=0x0
+RECV ACK base=357 sack=0x0
+SEND DATA seq=372 ack_base=0 sack=0x0
+RECV ACK base=358 sack=0x0
+SEND DATA seq=373 ack_base=0 sack=0x0
+RECV ACK base=359 sack=0x0
+SEND DATA seq=374 ack_base=0 sack=0x0
+RECV ACK base=360 sack=0x0
+SEND DATA seq=375 ack_base=0 sack=0x0
+RECV ACK base=361 sack=0x0
+SEND DATA seq=376 ack_base=0 sack=0x0
+RECV ACK base=362 sack=0x0
+SEND DATA seq=377 ack_base=0 sack=0x0
+RECV ACK base=363 sack=0x0
+SEND DATA seq=378 ack_base=0 sack=0x0
+RECV ACK base=364 sack=0x0
+SEND DATA seq=379 ack_base=0 sack=0x0
+RECV ACK base=365 sack=0x0
+SEND DATA seq=380 ack_base=0 sack=0x0
+RECV ACK base=366 sack=0x0
+SEND DATA seq=381 ack_base=0 sack=0x0
+RECV ACK base=367 sack=0x0
+SEND DATA seq=382 ack_base=0 sack=0x0
+RECV ACK base=368 sack=0x0
+SEND DATA seq=383 ack_base=0 sack=0x0
+RECV ACK base=369 sack=0x0
+SEND DATA seq=384 ack_base=0 sack=0x0
+RECV ACK base=370 sack=0x0
+SEND DATA seq=385 ack_base=0 sack=0x0
+RECV ACK base=371 sack=0x0
+SEND DATA seq=386 ack_base=0 sack=0x0
+RECV ACK base=372 sack=0x0
+SEND DATA seq=387 ack_base=0 sack=0x0
+RECV ACK base=373 sack=0x0
+SEND DATA seq=388 ack_base=0 sack=0x0
+RECV ACK base=374 sack=0x0
+SEND DATA seq=389 ack_base=0 sack=0x0
+RECV ACK base=375 sack=0x0
+SEND DATA seq=390 ack_base=0 sack=0x0
+RECV ACK base=376 sack=0x0
+SEND DATA seq=391 ack_base=0 sack=0x0
+RECV ACK base=377 sack=0x0
+SEND DATA seq=392 ack_base=0 sack=0x0
+RECV ACK base=378 sack=0x0
+SEND DATA seq=393 ack_base=0 sack=0x0
+RECV ACK base=379 sack=0x0
+SEND DATA seq=394 ack_base=0 sack=0x0
+RECV ACK base=380 sack=0x0
+SEND DATA seq=395 ack_base=0 sack=0x0
+RECV ACK base=381 sack=0x0
+SEND DATA seq=396 ack_base=0 sack=0x0
+RECV ACK base=382 sack=0x0
+SEND DATA seq=397 ack_base=0 sack=0x0
+RECV ACK base=383 sack=0x0
+SEND DATA seq=398 ack_base=0 sack=0x0
+RECV ACK base=384 sack=0x0
+SEND DATA seq=399 ack_base=0 sack=0x0
+RECV ACK base=385 sack=0x0
+SEND DATA seq=400 ack_base=0 sack=0x0
+RECV ACK base=386 sack=0x0
+SEND DATA seq=401 ack_base=0 sack=0x0
+RECV ACK base=387 sack=0x0
+SEND DATA seq=402 ack_base=0 sack=0x0
+RECV ACK base=388 sack=0x0
+SEND DATA seq=403 ack_base=0 sack=0x0
+RECV ACK base=389 sack=0x0
+SEND DATA seq=404 ack_base=0 sack=0x0
+RECV ACK base=390 sack=0x0
+SEND DATA seq=405 ack_base=0 sack=0x0
+RECV ACK base=391 sack=0x0
+SEND DATA seq=406 ack_base=0 sack=0x0
+RECV ACK base=392 sack=0x0
+SEND DATA seq=407 ack_base=0 sack=0x0
+RECV ACK base=393 sack=0x0
+SEND DATA seq=408 ack_base=0 sack=0x0
+RECV ACK base=394 sack=0x0
+SEND DATA seq=409 ack_base=0 sack=0x0
+RECV ACK base=395 sack=0x0
+SEND DATA seq=410 ack_base=0 sack=0x0
+RECV ACK base=396 sack=0x0
+SEND DATA seq=411 ack_base=0 sack=0x0
+RECV ACK base=397 sack=0x0
+SEND DATA seq=412 ack_base=0 sack=0x0
+RECV ACK base=398 sack=0x0
+SEND DATA seq=413 ack_base=0 sack=0x0
+RECV ACK base=399 sack=0x0
+SEND DATA seq=414 ack_base=0 sack=0x0
+RECV ACK base=400 sack=0x0
+SEND DATA seq=415 ack_base=0 sack=0x0
+RECV ACK base=401 sack=0x0
+SEND DATA seq=416 ack_base=0 sack=0x0
+RECV ACK base=402 sack=0x0
+SEND DATA seq=417 ack_base=0 sack=0x0
+RECV ACK base=403 sack=0x0
+SEND DATA seq=418 ack_base=0 sack=0x0
+RECV ACK base=404 sack=0x0
+SEND DATA seq=419 ack_base=0 sack=0x0
+RECV ACK base=405 sack=0x0
+SEND DATA seq=420 ack_base=0 sack=0x0
+RECV ACK base=406 sack=0x0
+SEND DATA seq=421 ack_base=0 sack=0x0
+RECV ACK base=407 sack=0x0
+SEND DATA seq=422 ack_base=0 sack=0x0
+RECV ACK base=408 sack=0x0
+SEND DATA seq=423 ack_base=0 sack=0x0
+RECV ACK base=409 sack=0x0
+SEND DATA seq=424 ack_base=0 sack=0x0
+RECV ACK base=410 sack=0x0
+SEND DATA seq=425 ack_base=0 sack=0x0
+RECV ACK base=411 sack=0x0
+SEND DATA seq=426 ack_base=0 sack=0x0
+RECV ACK base=412 sack=0x0
+SEND DATA seq=427 ack_base=0 sack=0x0
+RECV ACK base=413 sack=0x0
+SEND DATA seq=428 ack_base=0 sack=0x0
+RECV ACK base=414 sack=0x0
+SEND DATA seq=429 ack_base=0 sack=0x0
+RECV ACK base=415 sack=0x0
+SEND DATA seq=430 ack_base=0 sack=0x0
+RECV ACK base=416 sack=0x0
+SEND DATA seq=431 ack_base=0 sack=0x0
+RECV ACK base=417 sack=0x0
+SEND DATA seq=432 ack_base=0 sack=0x0
+RECV ACK base=418 sack=0x0
+SEND DATA seq=433 ack_base=0 sack=0x0
+RECV ACK base=419 sack=0x0
+SEND DATA seq=434 ack_base=0 sack=0x0
+RECV ACK base=420 sack=0x0
+SEND DATA seq=435 ack_base=0 sack=0x0
+RECV ACK base=421 sack=0x0
+SEND DATA seq=436 ack_base=0 sack=0x0
+RECV ACK base=422 sack=0x0
+SEND DATA seq=437 ack_base=0 sack=0x0
+RECV ACK base=423 sack=0x0
+SEND DATA seq=438 ack_base=0 sack=0x0
+RECV ACK base=424 sack=0x0
+SEND DATA seq=439 ack_base=0 sack=0x0
+RECV ACK base=425 sack=0x0
+SEND DATA seq=440 ack_base=0 sack=0x0
+RECV ACK base=426 sack=0x0
+SEND DATA seq=441 ack_base=0 sack=0x0
+RECV ACK base=427 sack=0x0
+SEND DATA seq=442 ack_base=0 sack=0x0
+RECV ACK base=428 sack=0x0
+SEND DATA seq=443 ack_base=0 sack=0x0
+RECV ACK base=429 sack=0x0
+SEND DATA seq=444 ack_base=0 sack=0x0
+RECV ACK base=430 sack=0x0
+SEND DATA seq=445 ack_base=0 sack=0x0
+RECV ACK base=431 sack=0x0
+SEND DATA seq=446 ack_base=0 sack=0x0
+RECV ACK base=432 sack=0x0
+SEND DATA seq=447 ack_base=0 sack=0x0
+RECV ACK base=433 sack=0x0
+SEND DATA seq=448 ack_base=0 sack=0x0
+RECV ACK base=434 sack=0x0
+SEND DATA seq=449 ack_base=0 sack=0x0
+RECV ACK base=435 sack=0x0
+SEND DATA seq=450 ack_base=0 sack=0x0
+RECV ACK base=436 sack=0x0
+SEND DATA seq=451 ack_base=0 sack=0x0
+RECV ACK base=437 sack=0x0
+SEND DATA seq=452 ack_base=0 sack=0x0
+RECV ACK base=438 sack=0x0
+SEND DATA seq=453 ack_base=0 sack=0x0
+RECV ACK base=439 sack=0x0
+SEND DATA seq=454 ack_base=0 sack=0x0
+RECV ACK base=440 sack=0x0
+SEND DATA seq=455 ack_base=0 sack=0x0
+RECV ACK base=441 sack=0x0
+SEND DATA seq=456 ack_base=0 sack=0x0
+RECV ACK base=442 sack=0x0
+SEND DATA seq=457 ack_base=0 sack=0x0
+RECV ACK base=443 sack=0x0
+SEND DATA seq=458 ack_base=0 sack=0x0
+RECV ACK base=444 sack=0x0
+SEND DATA seq=459 ack_base=0 sack=0x0
+RECV ACK base=445 sack=0x0
+SEND DATA seq=460 ack_base=0 sack=0x0
+RECV ACK base=446 sack=0x0
+SEND DATA seq=461 ack_base=0 sack=0x0
+RECV ACK base=447 sack=0x0
+SEND DATA seq=462 ack_base=0 sack=0x0
+RECV ACK base=448 sack=0x0
+SEND DATA seq=463 ack_base=0 sack=0x0
+RECV ACK base=449 sack=0x0
+SEND DATA seq=464 ack_base=0 sack=0x0
+RECV ACK base=450 sack=0x0
+SEND DATA seq=465 ack_base=0 sack=0x0
+RECV ACK base=451 sack=0x0
+SEND DATA seq=466 ack_base=0 sack=0x0
+RECV ACK base=452 sack=0x0
+SEND DATA seq=467 ack_base=0 sack=0x0
+RECV ACK base=453 sack=0x0
+SEND DATA seq=468 ack_base=0 sack=0x0
+RECV ACK base=454 sack=0x0
+SEND DATA seq=469 ack_base=0 sack=0x0
+RECV ACK base=455 sack=0x0
+SEND DATA seq=470 ack_base=0 sack=0x0
+RECV ACK base=456 sack=0x0
+SEND DATA seq=471 ack_base=0 sack=0x0
+RECV ACK base=457 sack=0x0
+SEND DATA seq=472 ack_base=0 sack=0x0
+RECV ACK base=458 sack=0x0
+SEND DATA seq=473 ack_base=0 sack=0x0
+RECV ACK base=459 sack=0x0
+SEND DATA seq=474 ack_base=0 sack=0x0
+RECV ACK base=460 sack=0x0
+SEND DATA seq=475 ack_base=0 sack=0x0
+RECV ACK base=461 sack=0x0
+SEND DATA seq=476 ack_base=0 sack=0x0
+RECV ACK base=462 sack=0x0
+SEND DATA seq=477 ack_base=0 sack=0x0
+RECV ACK base=463 sack=0x0
+SEND DATA seq=478 ack_base=0 sack=0x0
+RECV ACK base=464 sack=0x0
+SEND DATA seq=479 ack_base=0 sack=0x0
+RECV ACK base=465 sack=0x0
+SEND DATA seq=480 ack_base=0 sack=0x0
+RECV ACK base=466 sack=0x0
+SEND DATA seq=481 ack_base=0 sack=0x0
+RECV ACK base=467 sack=0x0
+SEND DATA seq=482 ack_base=0 sack=0x0
+RECV ACK base=468 sack=0x0
+SEND DATA seq=483 ack_base=0 sack=0x0
+RECV ACK base=469 sack=0x0
+SEND DATA seq=484 ack_base=0 sack=0x0
+RECV ACK base=470 sack=0x0
+SEND DATA seq=485 ack_base=0 sack=0x0
+RECV ACK base=471 sack=0x0
+SEND DATA seq=486 ack_base=0 sack=0x0
+RECV ACK base=472 sack=0x0
+SEND DATA seq=487 ack_base=0 sack=0x0
+RECV ACK base=473 sack=0x0
+SEND DATA seq=488 ack_base=0 sack=0x0
+RECV ACK base=474 sack=0x0
+SEND DATA seq=489 ack_base=0 sack=0x0
+RECV ACK base=475 sack=0x0
+SEND DATA seq=490 ack_base=0 sack=0x0
+RECV ACK base=476 sack=0x0
+SEND DATA seq=491 ack_base=0 sack=0x0
+RECV ACK base=477 sack=0x0
+SEND DATA seq=492 ack_base=0 sack=0x0
+RECV ACK base=478 sack=0x0
+SEND DATA seq=493 ack_base=0 sack=0x0
+RECV ACK base=479 sack=0x0
+SEND DATA seq=494 ack_base=0 sack=0x0
+RECV ACK base=480 sack=0x0
+SEND DATA seq=495 ack_base=0 sack=0x0
+RECV ACK base=481 sack=0x0
+SEND DATA seq=496 ack_base=0 sack=0x0
+RECV ACK base=482 sack=0x0
+SEND DATA seq=497 ack_base=0 sack=0x0
+RECV ACK base=483 sack=0x0
+SEND DATA seq=498 ack_base=0 sack=0x0
+RECV ACK base=484 sack=0x0
+SEND DATA seq=499 ack_base=0 sack=0x0
+RECV ACK base=485 sack=0x0
+SEND DATA seq=500 ack_base=0 sack=0x0
+RECV ACK base=486 sack=0x0
+SEND DATA seq=501 ack_base=0 sack=0x0
+RECV ACK base=487 sack=0x0
+SEND DATA seq=502 ack_base=0 sack=0x0
+RECV ACK base=488 sack=0x0
+SEND DATA seq=503 ack_base=0 sack=0x0
+RECV ACK base=489 sack=0x0
+SEND DATA seq=504 ack_base=0 sack=0x0
+RECV ACK base=490 sack=0x0
+SEND DATA seq=505 ack_base=0 sack=0x0
+RECV ACK base=491 sack=0x0
+SEND DATA seq=506 ack_base=0 sack=0x0
+RECV ACK base=492 sack=0x0
+SEND DATA seq=507 ack_base=0 sack=0x0
+RECV ACK base=493 sack=0x0
+SEND DATA seq=508 ack_base=0 sack=0x0
+RECV ACK base=494 sack=0x0
+SEND DATA seq=509 ack_base=0 sack=0x0
+RECV ACK base=495 sack=0x0
+SEND DATA seq=510 ack_base=0 sack=0x0
+RECV ACK base=496 sack=0x0
+SEND DATA seq=511 ack_base=0 sack=0x0
+RECV ACK base=497 sack=0x0
+SEND DATA seq=512 ack_base=0 sack=0x0
+RECV ACK base=498 sack=0x0
+SEND DATA seq=513 ack_base=0 sack=0x0
+RECV ACK base=499 sack=0x0
+SEND DATA seq=514 ack_base=0 sack=0x0
+RECV ACK base=500 sack=0x0
+SEND DATA seq=515 ack_base=0 sack=0x0
+RECV ACK base=501 sack=0x0
+SEND DATA seq=516 ack_base=0 sack=0x0
+RECV ACK base=502 sack=0x0
+SEND DATA seq=517 ack_base=0 sack=0x0
+RECV ACK base=503 sack=0x0
+SEND DATA seq=518 ack_base=0 sack=0x0
+RECV ACK base=504 sack=0x0
+SEND DATA seq=519 ack_base=0 sack=0x0
+RECV ACK base=505 sack=0x0
+SEND DATA seq=520 ack_base=0 sack=0x0
+RECV ACK base=506 sack=0x0
+SEND DATA seq=521 ack_base=0 sack=0x0
+RECV ACK base=507 sack=0x0
+SEND DATA seq=522 ack_base=0 sack=0x0
+RECV ACK base=508 sack=0x0
+SEND DATA seq=523 ack_base=0 sack=0x0
+RECV ACK base=509 sack=0x0
+SEND DATA seq=524 ack_base=0 sack=0x0
+RECV ACK base=510 sack=0x0
+SEND DATA seq=525 ack_base=0 sack=0x0
+RECV ACK base=511 sack=0x0
+SEND DATA seq=526 ack_base=0 sack=0x0
+RECV ACK base=512 sack=0x0
+SEND DATA seq=527 ack_base=0 sack=0x0
+RECV ACK base=513 sack=0x0
+SEND DATA seq=528 ack_base=0 sack=0x0
+RECV ACK base=514 sack=0x0
+SEND DATA seq=529 ack_base=0 sack=0x0
+RECV ACK base=515 sack=0x0
+SEND DATA seq=530 ack_base=0 sack=0x0
+RECV ACK base=516 sack=0x0
+SEND DATA seq=531 ack_base=0 sack=0x0
+RECV ACK base=517 sack=0x0
+SEND DATA seq=532 ack_base=0 sack=0x0
+RECV ACK base=518 sack=0x0
+SEND DATA seq=533 ack_base=0 sack=0x0
+RECV ACK base=519 sack=0x0
+SEND DATA seq=534 ack_base=0 sack=0x0
+RECV ACK base=520 sack=0x0
+SEND DATA seq=535 ack_base=0 sack=0x0
+RECV ACK base=521 sack=0x0
+SEND DATA seq=536 ack_base=0 sack=0x0
+RECV ACK base=522 sack=0x0
+SEND DATA seq=537 ack_base=0 sack=0x0
+RECV ACK base=523 sack=0x0
+SEND DATA seq=538 ack_base=0 sack=0x0
+RECV ACK base=524 sack=0x0
+SEND DATA seq=539 ack_base=0 sack=0x0
+RECV ACK base=525 sack=0x0
+SEND DATA seq=540 ack_base=0 sack=0x0
+RECV ACK base=526 sack=0x0
+SEND DATA seq=541 ack_base=0 sack=0x0
+RECV ACK base=527 sack=0x0
+SEND DATA seq=542 ack_base=0 sack=0x0
+RECV ACK base=528 sack=0x0
+SEND DATA seq=543 ack_base=0 sack=0x0
+RECV ACK base=529 sack=0x0
+SEND DATA seq=544 ack_base=0 sack=0x0
+RECV ACK base=530 sack=0x0
+SEND DATA seq=545 ack_base=0 sack=0x0
+RECV ACK base=531 sack=0x0
+SEND DATA seq=546 ack_base=0 sack=0x0
+RECV ACK base=532 sack=0x0
+SEND DATA seq=547 ack_base=0 sack=0x0
+RECV ACK base=533 sack=0x0
+SEND DATA seq=548 ack_base=0 sack=0x0
+RECV ACK base=534 sack=0x0
+SEND DATA seq=549 ack_base=0 sack=0x0
+RECV ACK base=535 sack=0x0
+SEND DATA seq=550 ack_base=0 sack=0x0
+RECV ACK base=536 sack=0x0
+SEND DATA seq=551 ack_base=0 sack=0x0
+RECV ACK base=537 sack=0x0
+SEND DATA seq=552 ack_base=0 sack=0x0
+RECV ACK base=538 sack=0x0
+SEND DATA seq=553 ack_base=0 sack=0x0
+RECV ACK base=539 sack=0x0
+SEND DATA seq=554 ack_base=0 sack=0x0
+RECV ACK base=540 sack=0x0
+SEND DATA seq=555 ack_base=0 sack=0x0
+RECV ACK base=541 sack=0x0
+SEND DATA seq=556 ack_base=0 sack=0x0
+RECV ACK base=542 sack=0x0
+SEND DATA seq=557 ack_base=0 sack=0x0
+RECV ACK base=543 sack=0x0
+SEND DATA seq=558 ack_base=0 sack=0x0
+RECV ACK base=544 sack=0x0
+SEND DATA seq=559 ack_base=0 sack=0x0
+RECV ACK base=545 sack=0x0
+SEND DATA seq=560 ack_base=0 sack=0x0
+RECV ACK base=546 sack=0x0
+SEND DATA seq=561 ack_base=0 sack=0x0
+RECV ACK base=547 sack=0x0
+SEND DATA seq=562 ack_base=0 sack=0x0
+RECV ACK base=548 sack=0x0
+SEND DATA seq=563 ack_base=0 sack=0x0
+RECV ACK base=549 sack=0x0
+SEND DATA seq=564 ack_base=0 sack=0x0
+RECV ACK base=550 sack=0x0
+SEND DATA seq=565 ack_base=0 sack=0x0
+RECV ACK base=551 sack=0x0
+SEND DATA seq=566 ack_base=0 sack=0x0
+RECV ACK base=552 sack=0x0
+SEND DATA seq=567 ack_base=0 sack=0x0
+RECV ACK base=553 sack=0x0
+SEND DATA seq=568 ack_base=0 sack=0x0
+RECV ACK base=554 sack=0x0
+SEND DATA seq=569 ack_base=0 sack=0x0
+RECV ACK base=555 sack=0x0
+SEND DATA seq=570 ack_base=0 sack=0x0
+RECV ACK base=556 sack=0x0
+SEND DATA seq=571 ack_base=0 sack=0x0
+RECV ACK base=557 sack=0x0
+SEND DATA seq=572 ack_base=0 sack=0x0
+RECV ACK base=558 sack=0x0
+SEND DATA seq=573 ack_base=0 sack=0x0
+RECV ACK base=559 sack=0x0
+SEND DATA seq=574 ack_base=0 sack=0x0
+RECV ACK base=560 sack=0x0
+SEND DATA seq=575 ack_base=0 sack=0x0
+RECV ACK base=561 sack=0x0
+SEND DATA seq=576 ack_base=0 sack=0x0
+RECV ACK base=562 sack=0x0
+SEND DATA seq=577 ack_base=0 sack=0x0
+RECV ACK base=563 sack=0x0
+SEND DATA seq=578 ack_base=0 sack=0x0
+RECV ACK base=564 sack=0x0
+SEND DATA seq=579 ack_base=0 sack=0x0
+RECV ACK base=565 sack=0x0
+SEND DATA seq=580 ack_base=0 sack=0x0
+RECV ACK base=566 sack=0x0
+SEND DATA seq=581 ack_base=0 sack=0x0
+RECV ACK base=567 sack=0x0
+SEND DATA seq=582 ack_base=0 sack=0x0
+RECV ACK base=568 sack=0x0
+SEND DATA seq=583 ack_base=0 sack=0x0
+RECV ACK base=569 sack=0x0
+SEND DATA seq=584 ack_base=0 sack=0x0
+RECV ACK base=570 sack=0x0
+SEND DATA seq=585 ack_base=0 sack=0x0
+RECV ACK base=571 sack=0x0
+SEND DATA seq=586 ack_base=0 sack=0x0
+RECV ACK base=572 sack=0x0
+SEND DATA seq=587 ack_base=0 sack=0x0
+RECV ACK base=573 sack=0x0
+SEND DATA seq=588 ack_base=0 sack=0x0
+RECV ACK base=574 sack=0x0
+SEND DATA seq=589 ack_base=0 sack=0x0
+RECV ACK base=575 sack=0x0
+SEND DATA seq=590 ack_base=0 sack=0x0
+RECV ACK base=576 sack=0x0
+SEND DATA seq=591 ack_base=0 sack=0x0
+RECV ACK base=577 sack=0x0
+SEND DATA seq=592 ack_base=0 sack=0x0
+RECV ACK base=578 sack=0x0
+SEND DATA seq=593 ack_base=0 sack=0x0
+RECV ACK base=579 sack=0x0
+SEND DATA seq=594 ack_base=0 sack=0x0
+RECV ACK base=580 sack=0x0
+SEND DATA seq=595 ack_base=0 sack=0x0
+RECV ACK base=581 sack=0x0
+SEND DATA seq=596 ack_base=0 sack=0x0
+RECV ACK base=582 sack=0x0
+SEND DATA seq=597 ack_base=0 sack=0x0
+RECV ACK base=583 sack=0x0
+SEND DATA seq=598 ack_base=0 sack=0x0
+RECV ACK base=584 sack=0x0
+SEND DATA seq=599 ack_base=0 sack=0x0
+RECV ACK base=585 sack=0x0
+SEND DATA seq=600 ack_base=0 sack=0x0
+RECV ACK base=586 sack=0x0
+SEND DATA seq=601 ack_base=0 sack=0x0
+RECV ACK base=587 sack=0x0
+SEND DATA seq=602 ack_base=0 sack=0x0
+RECV ACK base=588 sack=0x0
+SEND DATA seq=603 ack_base=0 sack=0x0
+RECV ACK base=589 sack=0x0
+SEND DATA seq=604 ack_base=0 sack=0x0
+RECV ACK base=590 sack=0x0
+SEND DATA seq=605 ack_base=0 sack=0x0
+RECV ACK base=591 sack=0x0
+SEND DATA seq=606 ack_base=0 sack=0x0
+RECV ACK base=592 sack=0x0
+SEND DATA seq=607 ack_base=0 sack=0x0
+RECV ACK base=593 sack=0x0
+SEND DATA seq=608 ack_base=0 sack=0x0
+RECV ACK base=594 sack=0x0
+SEND DATA seq=609 ack_base=0 sack=0x0
+RECV ACK base=595 sack=0x0
+SEND DATA seq=610 ack_base=0 sack=0x0
+RECV ACK base=596 sack=0x0
+SEND DATA seq=611 ack_base=0 sack=0x0
+RECV ACK base=597 sack=0x0
+SEND DATA seq=612 ack_base=0 sack=0x0
+RECV ACK base=598 sack=0x0
+SEND DATA seq=613 ack_base=0 sack=0x0
+RECV ACK base=599 sack=0x0
+SEND DATA seq=614 ack_base=0 sack=0x0
+RECV ACK base=600 sack=0x0
+SEND DATA seq=615 ack_base=0 sack=0x0
+RECV ACK base=601 sack=0x0
+SEND DATA seq=616 ack_base=0 sack=0x0
+RECV ACK base=602 sack=0x0
+SEND DATA seq=617 ack_base=0 sack=0x0
+RECV ACK base=603 sack=0x0
+SEND DATA seq=618 ack_base=0 sack=0x0
+RECV ACK base=604 sack=0x0
+SEND DATA seq=619 ack_base=0 sack=0x0
+RECV ACK base=605 sack=0x0
+SEND DATA seq=620 ack_base=0 sack=0x0
+RECV ACK base=606 sack=0x0
+SEND DATA seq=621 ack_base=0 sack=0x0
+RECV ACK base=607 sack=0x0
+SEND DATA seq=622 ack_base=0 sack=0x0
+RECV ACK base=608 sack=0x0
+SEND DATA seq=623 ack_base=0 sack=0x0
+RECV ACK base=609 sack=0x0
+SEND DATA seq=624 ack_base=0 sack=0x0
+RECV ACK base=610 sack=0x0
+SEND DATA seq=625 ack_base=0 sack=0x0
+RECV ACK base=611 sack=0x0
+SEND DATA seq=626 ack_base=0 sack=0x0
+RECV ACK base=612 sack=0x0
+SEND DATA seq=627 ack_base=0 sack=0x0
+RECV ACK base=613 sack=0x0
+SEND DATA seq=628 ack_base=0 sack=0x0
+RECV ACK base=614 sack=0x0
+SEND DATA seq=629 ack_base=0 sack=0x0
+RECV ACK base=615 sack=0x0
+SEND DATA seq=630 ack_base=0 sack=0x0
+RECV ACK base=616 sack=0x0
+SEND DATA seq=631 ack_base=0 sack=0x0
+RECV ACK base=617 sack=0x0
+SEND DATA seq=632 ack_base=0 sack=0x0
+RECV ACK base=618 sack=0x0
+SEND DATA seq=633 ack_base=0 sack=0x0
+RECV ACK base=619 sack=0x0
+SEND DATA seq=634 ack_base=0 sack=0x0
+RECV ACK base=620 sack=0x0
+SEND DATA seq=635 ack_base=0 sack=0x0
+RECV ACK base=621 sack=0x0
+SEND DATA seq=636 ack_base=0 sack=0x0
+RECV ACK base=622 sack=0x0
+SEND DATA seq=637 ack_base=0 sack=0x0
+RECV ACK base=623 sack=0x0
+SEND DATA seq=638 ack_base=0 sack=0x0
+RECV ACK base=624 sack=0x0
+SEND DATA seq=639 ack_base=0 sack=0x0
+RECV ACK base=625 sack=0x0
+SEND DATA seq=640 ack_base=0 sack=0x0
+RECV ACK base=626 sack=0x0
+SEND DATA seq=641 ack_base=0 sack=0x0
+RECV ACK base=627 sack=0x0
+SEND DATA seq=642 ack_base=0 sack=0x0
+RECV ACK base=628 sack=0x0
+SEND DATA seq=643 ack_base=0 sack=0x0
+RECV ACK base=629 sack=0x0
+SEND DATA seq=644 ack_base=0 sack=0x0
+RECV ACK base=630 sack=0x0
+SEND DATA seq=645 ack_base=0 sack=0x0
+RECV ACK base=631 sack=0x0
+SEND DATA seq=646 ack_base=0 sack=0x0
+RECV ACK base=632 sack=0x0
+SEND DATA seq=647 ack_base=0 sack=0x0
+RECV ACK base=633 sack=0x0
+SEND DATA seq=648 ack_base=0 sack=0x0
+RECV ACK base=634 sack=0x0
+SEND DATA seq=649 ack_base=0 sack=0x0
+RECV ACK base=635 sack=0x0
+SEND DATA seq=650 ack_base=0 sack=0x0
+RECV ACK base=636 sack=0x0
+SEND DATA seq=651 ack_base=0 sack=0x0
+RECV ACK base=637 sack=0x0
+SEND DATA seq=652 ack_base=0 sack=0x0
+RECV ACK base=638 sack=0x0
+SEND DATA seq=653 ack_base=0 sack=0x0
+RECV ACK base=639 sack=0x0
+SEND DATA seq=654 ack_base=0 sack=0x0
+RECV ACK base=640 sack=0x0
+SEND DATA seq=655 ack_base=0 sack=0x0
+RECV ACK base=641 sack=0x0
+SEND DATA seq=656 ack_base=0 sack=0x0
+RECV ACK base=642 sack=0x0
+SEND DATA seq=657 ack_base=0 sack=0x0
+RECV ACK base=643 sack=0x0
+SEND DATA seq=658 ack_base=0 sack=0x0
+RECV ACK base=644 sack=0x0
+SEND DATA seq=659 ack_base=0 sack=0x0
+RECV ACK base=645 sack=0x0
+SEND DATA seq=660 ack_base=0 sack=0x0
+RECV ACK base=646 sack=0x0
+SEND DATA seq=661 ack_base=0 sack=0x0
+RECV ACK base=647 sack=0x0
+SEND DATA seq=662 ack_base=0 sack=0x0
+RECV ACK base=648 sack=0x0
+SEND DATA seq=663 ack_base=0 sack=0x0
+RECV ACK base=649 sack=0x0
+SEND DATA seq=664 ack_base=0 sack=0x0
+RECV ACK base=650 sack=0x0
+SEND DATA seq=665 ack_base=0 sack=0x0
+RECV ACK base=651 sack=0x0
+SEND DATA seq=666 ack_base=0 sack=0x0
+RECV ACK base=652 sack=0x0
+SEND DATA seq=667 ack_base=0 sack=0x0
+RECV ACK base=653 sack=0x0
+SEND DATA seq=668 ack_base=0 sack=0x0
+RECV ACK base=654 sack=0x0
+SEND DATA seq=669 ack_base=0 sack=0x0
+RECV ACK base=655 sack=0x0
+SEND DATA seq=670 ack_base=0 sack=0x0
+RECV ACK base=656 sack=0x0
+SEND DATA seq=671 ack_base=0 sack=0x0
+RECV ACK base=657 sack=0x0
+SEND DATA seq=672 ack_base=0 sack=0x0
+RECV ACK base=658 sack=0x0
+SEND DATA seq=673 ack_base=0 sack=0x0
+RECV ACK base=659 sack=0x0
+SEND DATA seq=674 ack_base=0 sack=0x0
+RECV ACK base=660 sack=0x0
+SEND DATA seq=675 ack_base=0 sack=0x0
+RECV ACK base=661 sack=0x0
+SEND DATA seq=676 ack_base=0 sack=0x0
+RECV ACK base=662 sack=0x0
+SEND DATA seq=677 ack_base=0 sack=0x0
+RECV ACK base=663 sack=0x0
+SEND DATA seq=678 ack_base=0 sack=0x0
+RECV ACK base=664 sack=0x0
+SEND DATA seq=679 ack_base=0 sack=0x0
+RECV ACK base=665 sack=0x0
+SEND DATA seq=680 ack_base=0 sack=0x0
+RECV ACK base=666 sack=0x0
+SEND DATA seq=681 ack_base=0 sack=0x0
+RECV ACK base=667 sack=0x0
+SEND DATA seq=682 ack_base=0 sack=0x0
+RECV ACK base=668 sack=0x0
+SEND DATA seq=683 ack_base=0 sack=0x0
+RECV ACK base=669 sack=0x0
+SEND DATA seq=684 ack_base=0 sack=0x0
+RECV ACK base=670 sack=0x0
+SEND DATA seq=685 ack_base=0 sack=0x0
+RECV ACK base=671 sack=0x0
+SEND DATA seq=686 ack_base=0 sack=0x0
+RECV ACK base=672 sack=0x0
+SEND DATA seq=687 ack_base=0 sack=0x0
+RECV ACK base=673 sack=0x0
+SEND DATA seq=688 ack_base=0 sack=0x0
+RECV ACK base=674 sack=0x0
+SEND DATA seq=689 ack_base=0 sack=0x0
+RECV ACK base=675 sack=0x0
+SEND DATA seq=690 ack_base=0 sack=0x0
+RECV ACK base=676 sack=0x0
+SEND DATA seq=691 ack_base=0 sack=0x0
+RECV ACK base=677 sack=0x0
+SEND DATA seq=692 ack_base=0 sack=0x0
+RECV ACK base=678 sack=0x0
+SEND DATA seq=693 ack_base=0 sack=0x0
+RECV ACK base=679 sack=0x0
+SEND DATA seq=694 ack_base=0 sack=0x0
+RECV ACK base=680 sack=0x0
+SEND DATA seq=695 ack_base=0 sack=0x0
+RECV ACK base=681 sack=0x0
+SEND DATA seq=696 ack_base=0 sack=0x0
+RECV ACK base=682 sack=0x0
+SEND DATA seq=697 ack_base=0 sack=0x0
+RECV ACK base=683 sack=0x0
+SEND DATA seq=698 ack_base=0 sack=0x0
+RECV ACK base=684 sack=0x0
+SEND DATA seq=699 ack_base=0 sack=0x0
+RECV ACK base=685 sack=0x0
+SEND DATA seq=700 ack_base=0 sack=0x0
+RECV ACK base=686 sack=0x0
+SEND DATA seq=701 ack_base=0 sack=0x0
+RECV ACK base=687 sack=0x0
+SEND DATA seq=702 ack_base=0 sack=0x0
+RECV ACK base=688 sack=0x0
+SEND DATA seq=703 ack_base=0 sack=0x0
+RECV ACK base=689 sack=0x0
+SEND DATA seq=704 ack_base=0 sack=0x0
+RECV ACK base=690 sack=0x0
+SEND DATA seq=705 ack_base=0 sack=0x0
+RECV ACK base=691 sack=0x0
+SEND DATA seq=706 ack_base=0 sack=0x0
+RECV ACK base=692 sack=0x0
+SEND DATA seq=707 ack_base=0 sack=0x0
+RECV ACK base=693 sack=0x0
+SEND DATA seq=708 ack_base=0 sack=0x0
+RECV ACK base=694 sack=0x0
+SEND DATA seq=709 ack_base=0 sack=0x0
+RECV ACK base=695 sack=0x0
+SEND DATA seq=710 ack_base=0 sack=0x0
+RECV ACK base=696 sack=0x0
+SEND DATA seq=711 ack_base=0 sack=0x0
+RECV ACK base=697 sack=0x0
+SEND DATA seq=712 ack_base=0 sack=0x0
+RECV ACK base=698 sack=0x0
+SEND DATA seq=713 ack_base=0 sack=0x0
+RECV ACK base=699 sack=0x0
+SEND DATA seq=714 ack_base=0 sack=0x0
+RECV ACK base=700 sack=0x0
+SEND DATA seq=715 ack_base=0 sack=0x0
+RECV ACK base=701 sack=0x0
+SEND DATA seq=716 ack_base=0 sack=0x0
+RECV ACK base=702 sack=0x0
+SEND DATA seq=717 ack_base=0 sack=0x0
+RECV ACK base=703 sack=0x0
+SEND DATA seq=718 ack_base=0 sack=0x0
+RECV ACK base=704 sack=0x0
+SEND DATA seq=719 ack_base=0 sack=0x0
+RECV ACK base=705 sack=0x0
+SEND DATA seq=720 ack_base=0 sack=0x0
+RECV ACK base=706 sack=0x0
+SEND DATA seq=721 ack_base=0 sack=0x0
+RECV ACK base=707 sack=0x0
+SEND DATA seq=722 ack_base=0 sack=0x0
+RECV ACK base=708 sack=0x0
+SEND DATA seq=723 ack_base=0 sack=0x0
+RECV ACK base=709 sack=0x0
+SEND DATA seq=724 ack_base=0 sack=0x0
+RECV ACK base=710 sack=0x0
+SEND DATA seq=725 ack_base=0 sack=0x0
+RECV ACK base=711 sack=0x0
+SEND DATA seq=726 ack_base=0 sack=0x0
+RECV ACK base=712 sack=0x0
+SEND DATA seq=727 ack_base=0 sack=0x0
+RECV ACK base=713 sack=0x0
+SEND DATA seq=728 ack_base=0 sack=0x0
+RECV ACK base=714 sack=0x0
+SEND DATA seq=729 ack_base=0 sack=0x0
+RECV ACK base=715 sack=0x0
+SEND DATA seq=730 ack_base=0 sack=0x0
+RECV ACK base=716 sack=0x0
+SEND DATA seq=731 ack_base=0 sack=0x0
+RECV ACK base=717 sack=0x0
+SEND DATA seq=732 ack_base=0 sack=0x0
+RECV ACK base=718 sack=0x0
+SEND DATA seq=733 ack_base=0 sack=0x0
+RECV ACK base=719 sack=0x0
+SEND DATA seq=734 ack_base=0 sack=0x0
+RECV ACK base=720 sack=0x0
+SEND DATA seq=735 ack_base=0 sack=0x0
+RECV ACK base=721 sack=0x0
+SEND DATA seq=736 ack_base=0 sack=0x0
+RECV ACK base=722 sack=0x0
+SEND DATA seq=737 ack_base=0 sack=0x0
+RECV ACK base=723 sack=0x0
+SEND DATA seq=738 ack_base=0 sack=0x0
+RECV ACK base=724 sack=0x0
+SEND DATA seq=739 ack_base=0 sack=0x0
+RECV ACK base=725 sack=0x0
+SEND DATA seq=740 ack_base=0 sack=0x0
+RECV ACK base=726 sack=0x0
+SEND DATA seq=741 ack_base=0 sack=0x0
+RECV ACK base=727 sack=0x0
+SEND DATA seq=742 ack_base=0 sack=0x0
+RECV ACK base=728 sack=0x0
+SEND DATA seq=743 ack_base=0 sack=0x0
+RECV ACK base=729 sack=0x0
+SEND DATA seq=744 ack_base=0 sack=0x0
+RECV ACK base=730 sack=0x0
+SEND DATA seq=745 ack_base=0 sack=0x0
+RECV ACK base=731 sack=0x0
+SEND DATA seq=746 ack_base=0 sack=0x0
+RECV ACK base=732 sack=0x0
+SEND DATA seq=747 ack_base=0 sack=0x0
+RECV ACK base=733 sack=0x0
+SEND DATA seq=748 ack_base=0 sack=0x0
+RECV ACK base=734 sack=0x0
+SEND DATA seq=749 ack_base=0 sack=0x0
+RECV ACK base=735 sack=0x0
+SEND DATA seq=750 ack_base=0 sack=0x0
+RECV ACK base=736 sack=0x0
+SEND DATA seq=751 ack_base=0 sack=0x0
+RECV ACK base=737 sack=0x0
+SEND DATA seq=752 ack_base=0 sack=0x0
+RECV ACK base=738 sack=0x0
+SEND DATA seq=753 ack_base=0 sack=0x0
+RECV ACK base=739 sack=0x0
+SEND DATA seq=754 ack_base=0 sack=0x0
+RECV ACK base=740 sack=0x0
+SEND DATA seq=755 ack_base=0 sack=0x0
+RECV ACK base=741 sack=0x0
+SEND DATA seq=756 ack_base=0 sack=0x0
+RECV ACK base=742 sack=0x0
+SEND DATA seq=757 ack_base=0 sack=0x0
+RECV ACK base=743 sack=0x0
+SEND DATA seq=758 ack_base=0 sack=0x0
+RECV ACK base=744 sack=0x0
+SEND DATA seq=759 ack_base=0 sack=0x0
+RECV ACK base=745 sack=0x0
+SEND DATA seq=760 ack_base=0 sack=0x0
+RECV ACK base=746 sack=0x0
+SEND DATA seq=761 ack_base=0 sack=0x0
+RECV ACK base=747 sack=0x0
+SEND DATA seq=762 ack_base=0 sack=0x0
+RECV ACK base=748 sack=0x0
+SEND DATA seq=763 ack_base=0 sack=0x0
+RECV ACK base=749 sack=0x0
+SEND DATA seq=764 ack_base=0 sack=0x0
+RECV ACK base=750 sack=0x0
+SEND DATA seq=765 ack_base=0 sack=0x0
+RECV ACK base=751 sack=0x0
+SEND DATA seq=766 ack_base=0 sack=0x0
+RECV ACK base=752 sack=0x0
+SEND DATA seq=767 ack_base=0 sack=0x0
+RECV ACK base=753 sack=0x0
+SEND DATA seq=768 ack_base=0 sack=0x0
+RECV ACK base=754 sack=0x0
+SEND DATA seq=769 ack_base=0 sack=0x0
+RECV ACK base=755 sack=0x0
+SEND DATA seq=770 ack_base=0 sack=0x0
+RECV ACK base=756 sack=0x0
+SEND DATA seq=771 ack_base=0 sack=0x0
+RECV ACK base=757 sack=0x0
+SEND DATA seq=772 ack_base=0 sack=0x0
+RECV ACK base=758 sack=0x0
+SEND DATA seq=773 ack_base=0 sack=0x0
+RECV ACK base=759 sack=0x0
+SEND DATA seq=774 ack_base=0 sack=0x0
+RECV ACK base=760 sack=0x0
+SEND DATA seq=775 ack_base=0 sack=0x0
+RECV ACK base=761 sack=0x0
+SEND DATA seq=776 ack_base=0 sack=0x0
+RECV ACK base=762 sack=0x0
+SEND DATA seq=777 ack_base=0 sack=0x0
+RECV ACK base=763 sack=0x0
+SEND DATA seq=778 ack_base=0 sack=0x0
+RECV ACK base=764 sack=0x0
+SEND DATA seq=779 ack_base=0 sack=0x0
+RECV ACK base=765 sack=0x0
+SEND DATA seq=780 ack_base=0 sack=0x0
+RECV ACK base=766 sack=0x0
+SEND DATA seq=781 ack_base=0 sack=0x0
+RECV ACK base=767 sack=0x0
+SEND DATA seq=782 ack_base=0 sack=0x0
+RECV ACK base=768 sack=0x0
+SEND DATA seq=783 ack_base=0 sack=0x0
+RECV ACK base=769 sack=0x0
+SEND DATA seq=784 ack_base=0 sack=0x0
+RECV ACK base=770 sack=0x0
+SEND DATA seq=785 ack_base=0 sack=0x0
+RECV ACK base=771 sack=0x0
+SEND DATA seq=786 ack_base=0 sack=0x0
+RECV ACK base=772 sack=0x0
+SEND DATA seq=787 ack_base=0 sack=0x0
+RECV ACK base=773 sack=0x0
+SEND DATA seq=788 ack_base=0 sack=0x0
+RECV ACK base=774 sack=0x0
+SEND DATA seq=789 ack_base=0 sack=0x0
+RECV ACK base=775 sack=0x0
+SEND DATA seq=790 ack_base=0 sack=0x0
+RECV ACK base=776 sack=0x0
+SEND DATA seq=791 ack_base=0 sack=0x0
+RECV ACK base=777 sack=0x0
+SEND DATA seq=792 ack_base=0 sack=0x0
+RECV ACK base=778 sack=0x0
+SEND DATA seq=793 ack_base=0 sack=0x0
+RECV ACK base=779 sack=0x0
+SEND DATA seq=794 ack_base=0 sack=0x0
+RECV ACK base=780 sack=0x0
+SEND DATA seq=795 ack_base=0 sack=0x0
+RECV ACK base=781 sack=0x0
+SEND DATA seq=796 ack_base=0 sack=0x0
+RECV ACK base=782 sack=0x0
+SEND DATA seq=797 ack_base=0 sack=0x0
+RECV ACK base=783 sack=0x0
+SEND DATA seq=798 ack_base=0 sack=0x0
+RECV ACK base=784 sack=0x0
+SEND DATA seq=799 ack_base=0 sack=0x0
+RECV ACK base=785 sack=0x0
+SEND DATA seq=800 ack_base=0 sack=0x0
+RECV ACK base=786 sack=0x0
+SEND DATA seq=801 ack_base=0 sack=0x0
+RECV ACK base=787 sack=0x0
+SEND DATA seq=802 ack_base=0 sack=0x0
+RECV ACK base=788 sack=0x0
+SEND DATA seq=803 ack_base=0 sack=0x0
+RECV ACK base=789 sack=0x0
+SEND DATA seq=804 ack_base=0 sack=0x0
+RECV ACK base=790 sack=0x0
+SEND DATA seq=805 ack_base=0 sack=0x0
+RECV ACK base=791 sack=0x0
+SEND DATA seq=806 ack_base=0 sack=0x0
+RECV ACK base=792 sack=0x0
+SEND DATA seq=807 ack_base=0 sack=0x0
+RECV ACK base=793 sack=0x0
+SEND DATA seq=808 ack_base=0 sack=0x0
+RECV ACK base=794 sack=0x0
+SEND DATA seq=809 ack_base=0 sack=0x0
+RECV ACK base=795 sack=0x0
+SEND DATA seq=810 ack_base=0 sack=0x0
+RECV ACK base=796 sack=0x0
+SEND DATA seq=811 ack_base=0 sack=0x0
+RECV ACK base=797 sack=0x0
+SEND DATA seq=812 ack_base=0 sack=0x0
+RECV ACK base=798 sack=0x0
+SEND DATA seq=813 ack_base=0 sack=0x0
+RECV ACK base=799 sack=0x0
+SEND DATA seq=814 ack_base=0 sack=0x0
+RECV ACK base=800 sack=0x0
+SEND DATA seq=815 ack_base=0 sack=0x0
+RECV ACK base=801 sack=0x0
+SEND DATA seq=816 ack_base=0 sack=0x0
+RECV ACK base=802 sack=0x0
+SEND DATA seq=817 ack_base=0 sack=0x0
+RECV ACK base=803 sack=0x0
+SEND DATA seq=818 ack_base=0 sack=0x0
+RECV ACK base=804 sack=0x0
+SEND DATA seq=819 ack_base=0 sack=0x0
+RECV ACK base=805 sack=0x0
+SEND DATA seq=820 ack_base=0 sack=0x0
+RECV ACK base=806 sack=0x0
+SEND DATA seq=821 ack_base=0 sack=0x0
+RECV ACK base=807 sack=0x0
+SEND DATA seq=822 ack_base=0 sack=0x0
+RECV ACK base=808 sack=0x0
+SEND DATA seq=823 ack_base=0 sack=0x0
+RECV ACK base=809 sack=0x0
+SEND DATA seq=824 ack_base=0 sack=0x0
+RECV ACK base=810 sack=0x0
+SEND DATA seq=825 ack_base=0 sack=0x0
+RECV ACK base=811 sack=0x0
+SEND DATA seq=826 ack_base=0 sack=0x0
+RECV ACK base=812 sack=0x0
+SEND DATA seq=827 ack_base=0 sack=0x0
+RECV ACK base=813 sack=0x0
+SEND DATA seq=828 ack_base=0 sack=0x0
+RECV ACK base=814 sack=0x0
+SEND DATA seq=829 ack_base=0 sack=0x0
+RECV ACK base=815 sack=0x0
+SEND DATA seq=830 ack_base=0 sack=0x0
+RECV ACK base=816 sack=0x0
+SEND DATA seq=831 ack_base=0 sack=0x0
+RECV ACK base=817 sack=0x0
+SEND DATA seq=832 ack_base=0 sack=0x0
+RECV ACK base=818 sack=0x0
+SEND DATA seq=833 ack_base=0 sack=0x0
+RECV ACK base=819 sack=0x0
+SEND DATA seq=834 ack_base=0 sack=0x0
+RECV ACK base=820 sack=0x0
+SEND DATA seq=835 ack_base=0 sack=0x0
+RECV ACK base=821 sack=0x0
+SEND DATA seq=836 ack_base=0 sack=0x0
+RECV ACK base=822 sack=0x0
+SEND DATA seq=837 ack_base=0 sack=0x0
+RECV ACK base=823 sack=0x0
+SEND DATA seq=838 ack_base=0 sack=0x0
+RECV ACK base=824 sack=0x0
+SEND DATA seq=839 ack_base=0 sack=0x0
+RECV ACK base=825 sack=0x0
+SEND DATA seq=840 ack_base=0 sack=0x0
+RECV ACK base=826 sack=0x0
+SEND DATA seq=841 ack_base=0 sack=0x0
+RECV ACK base=827 sack=0x0
+SEND DATA seq=842 ack_base=0 sack=0x0
+RECV ACK base=828 sack=0x0
+SEND DATA seq=843 ack_base=0 sack=0x0
+RECV ACK base=829 sack=0x0
+SEND DATA seq=844 ack_base=0 sack=0x0
+RECV ACK base=830 sack=0x0
+SEND DATA seq=845 ack_base=0 sack=0x0
+RECV ACK base=831 sack=0x0
+SEND DATA seq=846 ack_base=0 sack=0x0
+RECV ACK base=832 sack=0x0
+SEND DATA seq=847 ack_base=0 sack=0x0
+RECV ACK base=833 sack=0x0
+SEND DATA seq=848 ack_base=0 sack=0x0
+RECV ACK base=834 sack=0x0
+SEND DATA seq=849 ack_base=0 sack=0x0
+RECV ACK base=835 sack=0x0
+SEND DATA seq=850 ack_base=0 sack=0x0
+RECV ACK base=836 sack=0x0
+SEND DATA seq=851 ack_base=0 sack=0x0
+RECV ACK base=837 sack=0x0
+SEND DATA seq=852 ack_base=0 sack=0x0
+RECV ACK base=838 sack=0x0
+SEND DATA seq=853 ack_base=0 sack=0x0
+RECV ACK base=839 sack=0x0
+SEND DATA seq=854 ack_base=0 sack=0x0
+RECV ACK base=840 sack=0x0
+SEND DATA seq=855 ack_base=0 sack=0x0
+RECV ACK base=841 sack=0x0
+SEND DATA seq=856 ack_base=0 sack=0x0
+RECV ACK base=842 sack=0x0
+SEND DATA seq=857 ack_base=0 sack=0x0
+RECV ACK base=843 sack=0x0
+SEND DATA seq=858 ack_base=0 sack=0x0
+RECV ACK base=844 sack=0x0
+SEND DATA seq=859 ack_base=0 sack=0x0
+RECV ACK base=845 sack=0x0
+SEND DATA seq=860 ack_base=0 sack=0x0
+RECV ACK base=846 sack=0x0
+SEND DATA seq=861 ack_base=0 sack=0x0
+RECV ACK base=847 sack=0x0
+SEND DATA seq=862 ack_base=0 sack=0x0
+RECV ACK base=848 sack=0x0
+SEND DATA seq=863 ack_base=0 sack=0x0
+RECV ACK base=849 sack=0x0
+SEND DATA seq=864 ack_base=0 sack=0x0
+RECV ACK base=850 sack=0x0
+SEND DATA seq=865 ack_base=0 sack=0x0
+RECV ACK base=851 sack=0x0
+SEND DATA seq=866 ack_base=0 sack=0x0
+RECV ACK base=852 sack=0x0
+SEND DATA seq=867 ack_base=0 sack=0x0
+RECV ACK base=853 sack=0x0
+SEND DATA seq=868 ack_base=0 sack=0x0
+RECV ACK base=854 sack=0x0
+SEND DATA seq=869 ack_base=0 sack=0x0
+RECV ACK base=855 sack=0x0
+SEND DATA seq=870 ack_base=0 sack=0x0
+RECV ACK base=856 sack=0x0
+SEND DATA seq=871 ack_base=0 sack=0x0
+RECV ACK base=857 sack=0x0
+SEND DATA seq=872 ack_base=0 sack=0x0
+RECV ACK base=858 sack=0x0
+SEND DATA seq=873 ack_base=0 sack=0x0
+RECV ACK base=859 sack=0x0
+RECV ACK base=860 sack=0x0
+RECV ACK base=861 sack=0x0
+RECV ACK base=862 sack=0x0
+RECV ACK base=863 sack=0x0
+RECV ACK base=864 sack=0x0
+RECV ACK base=865 sack=0x0
+RECV ACK base=866 sack=0x0
+RECV ACK base=867 sack=0x0
+RECV ACK base=868 sack=0x0
+RECV ACK base=869 sack=0x0
+RECV ACK base=870 sack=0x0
+RECV ACK base=871 sack=0x0
+RECV ACK base=872 sack=0x0
+RECV ACK base=873 sack=0x0
+RECV ACK base=874 sack=0x0
+STATE FIN_WAIT data complete; retransmissions=0
+SEND FIN seq=874 ack_base=0 sack=0x0
+SEND CLOSE_ACK seq=0 ack_base=0 sack=0x0
+STATE TIME_WAIT receiver committed file, CRC32 verified
+STATE CLOSED transfer successful
+RESULT {"role":"sender","success":true,"error":"","session":"831964166f2509f7","file_size":1048576,"crc32":1700226611,"window":16,"chunk":1200,"total_seconds":0.0329701,"data_seconds":0.0297216,"throughput_mib_s":30.3305,"throughput_mbit_s":254.431,"data_sent":874,"data_received":0,"retransmissions":0,"control_retries":0,"ack_sent":0,"ack_received":874,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":16,"max_buffered":0,"close_confirmed":true}

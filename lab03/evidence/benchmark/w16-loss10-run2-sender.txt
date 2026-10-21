@@ -1,0 +1,6 @@
+STATE SYN_SENT session=40f363114a2b7390 bytes=131072 W=16
+STATE ESTABLISHED pipeline/selective-repeat
+STATE FIN_WAIT data complete; retransmissions=10
+STATE TIME_WAIT receiver committed file, CRC32 verified
+STATE CLOSED transfer successful
+RESULT {"role":"sender","success":true,"error":"","session":"40f363114a2b7390","file_size":131072,"crc32":2977644173,"window":16,"chunk":1200,"total_seconds":0.985841,"data_seconds":0.670378,"throughput_mib_s":0.126795,"throughput_mbit_s":1.06364,"data_sent":120,"data_received":0,"retransmissions":10,"control_retries":2,"ack_sent":0,"ack_received":103,"checksum_errors":0,"invalid_packets":0,"foreign_packets":0,"duplicates":0,"out_of_order":0,"max_in_flight":16,"max_buffered":0,"close_confirmed":true}

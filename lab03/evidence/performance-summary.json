@@ -1,0 +1,158 @@
+{
+  "file_bytes": 131072,
+  "input_sha256": "84b01de2e50fcbe7dc41984ed5a5647788b10f72edd321bcfa51703b06df09a8",
+  "file_source": "deterministically generated binary, Python Random(20261022)",
+  "chunk": 1200,
+  "rto_ms": 100,
+  "one_way_delay_ms": 8,
+  "loss_directions": "both, independently per datagram",
+  "windows": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "loss_probabilities": [
+    0,
+    0.1,
+    0.2
+  ],
+  "repetitions": 3,
+  "runs": 36,
+  "time": "2026-10-22 01:13:16 +0800",
+  "elapsed_seconds": 107.282,
+  "summary": [
+    {
+      "window": 1,
+      "loss": 0.0,
+      "n": 3,
+      "mean_seconds": 3.5384433333333334,
+      "mean_mib_s": 0.03532693333333334,
+      "median_mib_s": 0.0352608,
+      "min_mib_s": 0.0351778,
+      "max_mib_s": 0.0355422,
+      "mean_retransmissions": 0
+    },
+    {
+      "window": 4,
+      "loss": 0.0,
+      "n": 3,
+      "mean_seconds": 0.9658059999999999,
+      "mean_mib_s": 0.129433,
+      "median_mib_s": 0.128909,
+      "min_mib_s": 0.128587,
+      "max_mib_s": 0.130803,
+      "mean_retransmissions": 0
+    },
+    {
+      "window": 16,
+      "loss": 0.0,
+      "n": 3,
+      "mean_seconds": 0.32333466666666666,
+      "mean_mib_s": 0.38661166666666663,
+      "median_mib_s": 0.387918,
+      "min_mib_s": 0.383192,
+      "max_mib_s": 0.388725,
+      "mean_retransmissions": 0
+    },
+    {
+      "window": 64,
+      "loss": 0.0,
+      "n": 3,
+      "mean_seconds": 0.15642799999999998,
+      "mean_mib_s": 0.7997333333333333,
+      "median_mib_s": 0.784647,
+      "min_mib_s": 0.782419,
+      "max_mib_s": 0.832134,
+      "mean_retransmissions": 0
+    },
+    {
+      "window": 1,
+      "loss": 0.1,
+      "n": 3,
+      "mean_seconds": 6.159823333333333,
+      "mean_mib_s": 0.020335933333333334,
+      "median_mib_s": 0.0207492,
+      "min_mib_s": 0.0190558,
+      "max_mib_s": 0.0212028,
+      "mean_retransmissions": 23.333333333333332
+    },
+    {
+      "window": 4,
+      "loss": 0.1,
+      "n": 3,
+      "mean_seconds": 2.0055933333333336,
+      "mean_mib_s": 0.062713,
+      "median_mib_s": 0.0621131,
+      "min_mib_s": 0.0569657,
+      "max_mib_s": 0.0690602,
+      "mean_retransmissions": 12.333333333333334
+    },
+    {
+      "window": 16,
+      "loss": 0.1,
+      "n": 3,
+      "mean_seconds": 0.9316803333333333,
+      "mean_mib_s": 0.134751,
+      "median_mib_s": 0.130022,
+      "min_mib_s": 0.126795,
+      "max_mib_s": 0.147436,
+      "mean_retransmissions": 12
+    },
+    {
+      "window": 64,
+      "loss": 0.1,
+      "n": 3,
+      "mean_seconds": 0.4498933333333333,
+      "mean_mib_s": 0.280529,
+      "median_mib_s": 0.263636,
+      "min_mib_s": 0.257458,
+      "max_mib_s": 0.320493,
+      "mean_retransmissions": 9.333333333333334
+    },
+    {
+      "window": 1,
+      "loss": 0.2,
+      "n": 3,
+      "mean_seconds": 10.829253333333334,
+      "mean_mib_s": 0.011613666666666666,
+      "median_mib_s": 0.0116955,
+      "min_mib_s": 0.0104717,
+      "max_mib_s": 0.0126738,
+      "mean_retransmissions": 66
+    },
+    {
+      "window": 4,
+      "loss": 0.2,
+      "n": 3,
+      "mean_seconds": 3.683936666666667,
+      "mean_mib_s": 0.0344338,
+      "median_mib_s": 0.0325039,
+      "min_mib_s": 0.0303996,
+      "max_mib_s": 0.0403979,
+      "mean_retransmissions": 41.333333333333336
+    },
+    {
+      "window": 16,
+      "loss": 0.2,
+      "n": 3,
+      "mean_seconds": 1.3715066666666667,
+      "mean_mib_s": 0.0918397,
+      "median_mib_s": 0.0869316,
+      "min_mib_s": 0.0851225,
+      "max_mib_s": 0.103465,
+      "mean_retransmissions": 28.666666666666668
+    },
+    {
+      "window": 64,
+      "loss": 0.2,
+      "n": 3,
+      "mean_seconds": 0.7846426666666666,
+      "mean_mib_s": 0.17395133333333335,
+      "median_mib_s": 0.203609,
+      "min_mib_s": 0.109548,
+      "max_mib_s": 0.208697,
+      "mean_retransmissions": 24
+    }
+  ]
+}
