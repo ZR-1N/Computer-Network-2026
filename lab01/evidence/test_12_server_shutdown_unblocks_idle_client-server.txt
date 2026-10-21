@@ -1,0 +1,6 @@
+TCP 聊天服务器 127.0.0.1:62127 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:18] JOIN Idle
+[2026-10-21 23:14:19] LEAVE Idle
+TCP_STATS peer=Idle BytesOut=98 BytesIn=20 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

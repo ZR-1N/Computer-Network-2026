@@ -1,0 +1,195 @@
+TCP 聊天服务器 127.0.0.1:62215 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:22] JOIN Capacity0
+[2026-10-21 23:14:22] JOIN Capacity1
+[2026-10-21 23:14:22] JOIN Capacity2
+[2026-10-21 23:14:22] JOIN Capacity3
+[2026-10-21 23:14:22] JOIN Capacity4
+[2026-10-21 23:14:22] JOIN Capacity5
+[2026-10-21 23:14:22] JOIN Capacity6
+[2026-10-21 23:14:22] JOIN Capacity7
+[2026-10-21 23:14:22] JOIN Capacity8
+[2026-10-21 23:14:22] JOIN Capacity9
+[2026-10-21 23:14:22] JOIN Capacity10
+[2026-10-21 23:14:22] JOIN Capacity11
+[2026-10-21 23:14:22] JOIN Capacity12
+[2026-10-21 23:14:22] JOIN Capacity13
+[2026-10-21 23:14:22] JOIN Capacity14
+[2026-10-21 23:14:22] JOIN Capacity15
+[2026-10-21 23:14:22] JOIN Capacity16
+[2026-10-21 23:14:22] JOIN Capacity17
+[2026-10-21 23:14:22] JOIN Capacity18
+[2026-10-21 23:14:22] JOIN Capacity19
+[2026-10-21 23:14:22] JOIN Capacity20
+[2026-10-21 23:14:22] JOIN Capacity21
+[2026-10-21 23:14:22] JOIN Capacity22
+[2026-10-21 23:14:22] JOIN Capacity23
+[2026-10-21 23:14:22] JOIN Capacity24
+[2026-10-21 23:14:22] JOIN Capacity25
+[2026-10-21 23:14:22] JOIN Capacity26
+[2026-10-21 23:14:22] JOIN Capacity27
+[2026-10-21 23:14:22] JOIN Capacity28
+[2026-10-21 23:14:22] JOIN Capacity29
+[2026-10-21 23:14:22] JOIN Capacity30
+[2026-10-21 23:14:22] JOIN Capacity31
+[2026-10-21 23:14:22] JOIN Capacity32
+[2026-10-21 23:14:22] JOIN Capacity33
+[2026-10-21 23:14:22] JOIN Capacity34
+[2026-10-21 23:14:22] JOIN Capacity35
+[2026-10-21 23:14:22] JOIN Capacity36
+[2026-10-21 23:14:23] JOIN Capacity37
+[2026-10-21 23:14:23] JOIN Capacity38
+[2026-10-21 23:14:23] JOIN Capacity39
+[2026-10-21 23:14:23] JOIN Capacity40
+[2026-10-21 23:14:23] JOIN Capacity41
+[2026-10-21 23:14:23] JOIN Capacity42
+[2026-10-21 23:14:23] JOIN Capacity43
+[2026-10-21 23:14:23] JOIN Capacity44
+[2026-10-21 23:14:23] JOIN Capacity45
+[2026-10-21 23:14:23] JOIN Capacity46
+[2026-10-21 23:14:23] JOIN Capacity47
+[2026-10-21 23:14:23] JOIN Capacity48
+[2026-10-21 23:14:23] JOIN Capacity49
+[2026-10-21 23:14:23] JOIN Capacity50
+[2026-10-21 23:14:23] JOIN Capacity51
+[2026-10-21 23:14:23] JOIN Capacity52
+[2026-10-21 23:14:23] JOIN Capacity53
+[2026-10-21 23:14:23] JOIN Capacity54
+[2026-10-21 23:14:23] JOIN Capacity55
+[2026-10-21 23:14:23] JOIN Capacity56
+[2026-10-21 23:14:23] JOIN Capacity57
+[2026-10-21 23:14:23] JOIN Capacity58
+[2026-10-21 23:14:23] JOIN Capacity59
+[2026-10-21 23:14:23] JOIN Capacity60
+[2026-10-21 23:14:23] JOIN Capacity61
+[2026-10-21 23:14:23] JOIN Capacity62
+[2026-10-21 23:14:23] JOIN Capacity63
+[2026-10-21 23:14:23] LEAVE Capacity0
+TCP_STATS peer=Capacity0 BytesOut=3382 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity1
+TCP_STATS peer=Capacity1 BytesOut=3382 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity2
+TCP_STATS peer=Capacity2 BytesOut=3330 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity24
+TCP_STATS peer=Capacity24 BytesOut=2276 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity4
+TCP_STATS peer=Capacity4 BytesOut=3226 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity5
+TCP_STATS peer=Capacity5 BytesOut=3174 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity6
+TCP_STATS peer=Capacity6 BytesOut=3122 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity7
+TCP_STATS peer=Capacity7 BytesOut=3070 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity8
+TCP_STATS peer=Capacity8 BytesOut=3018 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity9
+TCP_STATS peer=Capacity9 BytesOut=2966 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity10
+TCP_STATS peer=Capacity10 BytesOut=2914 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity11
+TCP_STATS peer=Capacity11 BytesOut=2913 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity12
+TCP_STATS peer=Capacity12 BytesOut=2860 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity13
+TCP_STATS peer=Capacity13 BytesOut=2807 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity14
+TCP_STATS peer=Capacity14 BytesOut=2754 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity15
+TCP_STATS peer=Capacity15 BytesOut=2701 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity16
+TCP_STATS peer=Capacity16 BytesOut=2648 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity17
+TCP_STATS peer=Capacity17 BytesOut=2611 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity18
+TCP_STATS peer=Capacity18 BytesOut=2594 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity19
+TCP_STATS peer=Capacity19 BytesOut=2541 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity20
+TCP_STATS peer=Capacity20 BytesOut=2488 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity21
+TCP_STATS peer=Capacity21 BytesOut=2435 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity22
+TCP_STATS peer=Capacity22 BytesOut=2382 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity23
+TCP_STATS peer=Capacity23 BytesOut=2329 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity3
+TCP_STATS peer=Capacity3 BytesOut=3278 BytesIn=25 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity25
+TCP_STATS peer=Capacity25 BytesOut=2223 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity26
+TCP_STATS peer=Capacity26 BytesOut=2223 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity27
+TCP_STATS peer=Capacity27 BytesOut=2170 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity28
+TCP_STATS peer=Capacity28 BytesOut=2117 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity29
+TCP_STATS peer=Capacity29 BytesOut=2064 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity30
+TCP_STATS peer=Capacity30 BytesOut=2011 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity31
+TCP_STATS peer=Capacity31 BytesOut=1958 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity32
+TCP_STATS peer=Capacity32 BytesOut=1905 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity33
+TCP_STATS peer=Capacity33 BytesOut=1852 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity34
+TCP_STATS peer=Capacity34 BytesOut=1799 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity35
+TCP_STATS peer=Capacity35 BytesOut=1746 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity36
+TCP_STATS peer=Capacity36 BytesOut=1693 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity37
+TCP_STATS peer=Capacity37 BytesOut=1656 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity38
+TCP_STATS peer=Capacity38 BytesOut=1639 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity39
+TCP_STATS peer=Capacity39 BytesOut=1586 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity40
+TCP_STATS peer=Capacity40 BytesOut=1533 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity41
+TCP_STATS peer=Capacity41 BytesOut=1480 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity42
+TCP_STATS peer=Capacity42 BytesOut=1427 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity43
+TCP_STATS peer=Capacity43 BytesOut=1374 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity44
+TCP_STATS peer=Capacity44 BytesOut=1321 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity45
+TCP_STATS peer=Capacity45 BytesOut=1284 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity46
+TCP_STATS peer=Capacity46 BytesOut=1267 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity47
+TCP_STATS peer=Capacity47 BytesOut=1214 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity48
+TCP_STATS peer=Capacity48 BytesOut=1161 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity49
+TCP_STATS peer=Capacity49 BytesOut=1108 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity50
+TCP_STATS peer=Capacity50 BytesOut=1055 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity51
+TCP_STATS peer=Capacity51 BytesOut=1002 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity52
+TCP_STATS peer=Capacity52 BytesOut=949 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity53
+TCP_STATS peer=Capacity53 BytesOut=948 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity54
+TCP_STATS peer=Capacity54 BytesOut=895 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity55
+TCP_STATS peer=Capacity55 BytesOut=842 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity56
+TCP_STATS peer=Capacity56 BytesOut=789 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity57
+TCP_STATS peer=Capacity57 BytesOut=736 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity58
+TCP_STATS peer=Capacity58 BytesOut=683 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity59
+TCP_STATS peer=Capacity59 BytesOut=682 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity60
+TCP_STATS peer=Capacity60 BytesOut=629 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity61
+TCP_STATS peer=Capacity61 BytesOut=576 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity62
+TCP_STATS peer=Capacity62 BytesOut=523 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:23] LEAVE Capacity63
+TCP_STATS peer=Capacity63 BytesOut=470 BytesIn=26 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

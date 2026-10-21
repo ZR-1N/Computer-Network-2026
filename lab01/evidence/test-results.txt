@@ -1,0 +1,19 @@
+test_01_bilingual_broadcast_and_list (__main__.ChatTest.test_01_bilingual_broadcast_and_list) ... ok
+test_02_private_isolation (__main__.ChatTest.test_02_private_isolation) ... ok
+test_03_fragmentation_and_coalescing (__main__.ChatTest.test_03_fragmentation_and_coalescing) ... ok
+test_04_duplicate_and_reuse (__main__.ChatTest.test_04_duplicate_and_reuse) ... ok
+test_05_malformed_headers (__main__.ChatTest.test_05_malformed_headers) ... ok
+test_06_sequence_and_direction (__main__.ChatTest.test_06_sequence_and_direction) ... ok
+test_07_message_boundaries_and_recovery (__main__.ChatTest.test_07_message_boundaries_and_recovery) ... ok
+test_08_abrupt_disconnect (__main__.ChatTest.test_08_abrupt_disconnect) ... ok
+test_09_handshake_timeout_and_truncated_frame (__main__.ChatTest.test_09_handshake_timeout_and_truncated_frame) ... ok
+test_10_concurrent_integrity (__main__.ChatTest.test_10_concurrent_integrity) ... ok
+test_11_real_client_chinese_and_commands (__main__.ChatTest.test_11_real_client_chinese_and_commands) ... ok
+test_12_server_shutdown_unblocks_idle_client (__main__.ChatTest.test_12_server_shutdown_unblocks_idle_client) ... ok
+test_13_repeated_connect_quit (__main__.ChatTest.test_13_repeated_connect_quit) ... ok
+test_14_connection_capacity (__main__.ChatTest.test_14_connection_capacity) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 18.228s
+
+OK

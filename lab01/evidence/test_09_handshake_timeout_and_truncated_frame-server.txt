@@ -1,0 +1,7 @@
+TCP 聊天服务器 127.0.0.1:62111 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:16] JOIN Truncated
+[2026-10-21 23:14:16] LEAVE Truncated
+TCP_STATS peer=Truncated BytesOut=52 BytesIn=44 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+TCP_STATS peer= BytesOut=0 BytesIn=1 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

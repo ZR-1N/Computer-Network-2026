@@ -1,0 +1,12 @@
+TCP 聊天服务器 127.0.0.1:62106 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:10] JOIN Abrupt
+[2026-10-21 23:14:10] JOIN Observer
+[2026-10-21 23:14:10] LEAVE Abrupt
+TCP_STATS peer=Abrupt BytesOut=100 BytesIn=22 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:10] JOIN Abrupt
+[2026-10-21 23:14:10] LEAVE Observer
+TCP_STATS peer=Observer BytesOut=149 BytesIn=24 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:10] LEAVE Abrupt
+TCP_STATS peer=Abrupt BytesOut=100 BytesIn=22 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

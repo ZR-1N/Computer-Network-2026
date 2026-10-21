@@ -1,0 +1,8 @@
+TCP 聊天服务器 127.0.0.1:62082 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:07] JOIN 分片昵称
+[2026-10-21 23:14:07] CHAT 分片昵称: 第一条
+[2026-10-21 23:14:07] CHAT 分片昵称: second
+[2026-10-21 23:14:07] LEAVE 分片昵称
+TCP_STATS peer=分片昵称 BytesOut=216 BytesIn=91 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出

@@ -1,0 +1,14 @@
+TCP 聊天服务器 127.0.0.1:62068 | /quit 停止服务器
+TCP_STATS peer= BytesOut=16 BytesIn=0 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:06] JOIN 小明
+[2026-10-21 23:14:06] JOIN Alice
+[2026-10-21 23:14:06] JOIN 小红
+[2026-10-21 23:14:06] CHAT 小明: 你好，网络！ Hello TCP 🌍
+[2026-10-21 23:14:06] CHAT 小明: English message
+[2026-10-21 23:14:06] LEAVE 小明
+TCP_STATS peer=小明 BytesOut=280 BytesIn=102 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:06] LEAVE 小红
+TCP_STATS peer=小红 BytesOut=254 BytesIn=38 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+[2026-10-21 23:14:06] LEAVE Alice
+TCP_STATS peer=Alice BytesOut=247 BytesIn=21 BytesRetrans=0 DupAcksIn=0 TimeoutEpisodes=0
+服务器已正常退出
