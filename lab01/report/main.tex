@@ -1,0 +1,340 @@
+% Adapted from Wenxuan Shang's MIT-licensed NKU report template.
+% Original license is preserved in TEMPLATE-LICENSE.
+\documentclass[UTF8,notitlepage,11pt]{ctexart}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,graphicx,booktabs,tabularx,longtable,array}
+\usepackage{fancyhdr,fvextra,xcolor,enumitem,tikz,float}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\usepackage[colorlinks=true,linkcolor=blue!45!black,urlcolor=blue!55!black]{hyperref}
+\usepackage{xurl}
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{尚文轩 / 2412456}\fancyhead[R]{计算机网络 · 实验一}
+\fancyfoot[C]{\thepage}
+\setlist{nosep,topsep=4pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.23}
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small,breaklines=true,frame=single}
+\newcommand{\src}[1]{\nolinkurl{#1}}
+\input{measurements.tex}
+\title{\vspace*{-1.2cm}\includegraphics[width=.95\textwidth]{nankai.jpg}\\[1.3em]
+{\bfseries\Huge 实验报告}\\[1.1em]{\LARGE 实验01：利用流式套接字\\编写聊天程序}}
+\author{\begin{minipage}{.85\textwidth}\centering\Large
+姓名：\underline{尚文轩}\\[.6em]
+学号：\underline{2412456}\\[.6em]
+专业：\underline{计算机科学与技术}\\[.6em]
+任课教师：\underline{徐敬东、张建忠}\end{minipage}}
+\date{\Large 2026年10月21日}
+\begin{document}
+\maketitle\thispagestyle{empty}\clearpage
+\pagenumbering{arabic}\tableofcontents\clearpage
+
+\section{实验目的与任务对应}
+本实验在 Windows 上使用 C++17 和基础 Winsock 函数实现 TCP 聊天室。
+服务器支持多个客户端同时连接、群聊、一对一私聊、在线列表与上下线通知；客户端采用命令行界面，支持中文昵称、中英文正文和正常退出。所有服务器消息附带本机时钟时间。
+
+实验的重点是应用层协议语法、语义与时序的完整性，以及 TCP 字节流上的正确分帧、多线程共享状态保护和资源回收。实现不使用 CSocket、Qt 网络库、Boost.Asio 或其他现成网络框架。
+
+\begin{table}[H]\centering\small
+\caption{实验要求与实现、证据的对应关系}
+\begin{tabularx}{\textwidth}{p{.24\textwidth}XX}\toprule
+实验要求 & 实现位置 & 验证方式\\\midrule
+完整聊天协议 & 第\ref{sec:protocol}节、PROTOCOL.md & 首部、类型、状态、异常路径逐项说明\\
+基础 Socket 函数 & common.hpp、server.cpp、client.cpp & \src{socket/bind/listen/accept/connect/send/recv}\\
+界面与正常退出 & 客户端帮助、/quit & 真实客户端进程测试、停机唤醒测试\\
+中文和英文 & UTF-8 线协议、UTF-16 控制台输入转换 & 中文昵称、中文和英文正文往返\\
+多线程与多人聊天 & 每连接接收线程，房间互斥锁 & 4 客户端并发，64 会话容量测试\\
+结构清晰、可读 & 公共协议函数、服务器、客户端分离 & 模块表、核心函数与流程图\\
+丢失观察、完整交付 & TCP 统计、自动化测试、抓包材料 & 原始日志、可执行文件、报告源码/PDF\\\bottomrule
+\end{tabularx}\end{table}
+
+\section{实验环境与工程组织}
+实测操作系统为 \src{Windows 11 (10.0.26200)}，编译器为 Visual Studio 2019 Build Tools 提供的 MSVC x64；编译参数包含 \src{/std:c++17 /W4 /utf-8 /O2 /MT}，采用静态 C/C++ 运行库，链接 \src{ws2_32.lib}。
+报告使用 XeLaTeX 编译，并沿用本人提供模板的南开大学校名图、封面、页眉与目录结构。Python 仅作为测试驱动，不属于聊天实现。
+
+\begin{table}[H]\centering\small
+\begin{tabularx}{\textwidth}{p{.32\textwidth}X}\toprule
+目录或文件 & 用途\\\midrule
+src/common.hpp & 线协议、收发循环、编码校验、控制台输入、TCP 观测\\
+src/server.cpp & 监听、会话生命周期、用户表、消息分发、停机\\
+src/client.cpp & 登录、输入命令解析、接收显示、退出\\
+bin/chat\_server.exe & Windows x64 服务器可执行文件\\
+bin/chat\_client.exe & Windows x64 客户端可执行文件\\
+tests/ & 黑盒集成测试与抓包复现脚本\\
+evidence/ & 真实程序输出、测试结果与观测记录\\
+report/ & LaTeX 源码、模板资源、编译后的 PDF\\
+build.ps1、CMakeLists.txt & 直接编译和 CMake 构建入口\\\bottomrule
+\end{tabularx}\end{table}
+
+\section{聊天协议设计}\label{sec:protocol}
+\subsection{协议分层与分帧}
+协议名为 CN Chat/1，使用 IPv4 TCP，默认端口为 9001。默认服务器监听 \src{127.0.0.1}；跨计算机时显式指定服务器实际局域网地址。
+TCP 提供有序字节流，但不保留一次 \src{send} 的消息边界，故使用“固定首部 + 长度指定正文”。首部是 16 字节，所有多字节整数采用网络字节序。
+
+\begin{table}[H]\centering
+\caption{16 字节首部，按字节偏移排列}
+\begin{tabular}{cccl}\toprule
+偏移 & 长度 & 字段 & 约束\\\midrule
+0 & 4 & magic & \src{0x434E4554}，即 CNET\\
+4 & 2 & version & 固定为 1\\
+6 & 2 & type & 消息类型，取值 1--12\\
+8 & 4 & payload length & UTF-8 正文长度，最大 16384 字节\\
+12 & 4 & sequence & 请求序号或服务器发送标识\\\bottomrule
+\end{tabular}\end{table}
+
+首部通过四个 32 位整数显式序列化，版本和类型分别占第二个整数的高、低 16 位；不直接发送带有平台填充的 C++ 结构体。接收时首先完整读取首部，校验 magic、版本、类型和长度，然后才分配正文缓冲并读取正文。
+发送也必须循环，处理 \src{send} 只发送部分字节的情况。若 \src{recv} 返回零或错误而帧未完成，则丢弃该不完整帧，结束会话，不将半条消息广播。
+
+\subsection{编码、文本约束与时间}
+线协议的正文为严格 UTF-8，不允许 NUL 和 CR。业务文本使用 LF 作为字段分隔，正文内容本身不允许 LF。中文昵称长度按 UTF-8 字节计算：昵称为 1--32 字节，不能包含空格、ASCII 控制字符或斜杠；聊天正文为 1--4096 字节。16384 是通用帧长度上限，4096 是聊天正文的业务上限，两者用途不同。
+
+Windows 命令行参数由 \src{wmain} 接收 UTF-16，控制台读取宽字符，再转换为 UTF-8；输出代码页设置为 UTF-8。重定向管道输入也使用 UTF-8，避免中文在不同系统代码页间隐式转换。
+
+所有服务器业务响应首字段为服务器本机时间，格式为 \src{YYYY-MM-DD HH:MM:SS}。这是服务器本地时区，不是客户端发送时间，也不用于全局时钟同步。
+
+\subsection{消息类型与语义}
+下表中 $T$ 为服务器时间，$N$ 为昵称，$M$ 为正文，$D$ 为目标昵称；符号 $\backslash n$ 表示单个 LF 字节，而不是反斜杠与字母两个字符。
+
+\begin{longtable}{c p{.19\textwidth} p{.12\textwidth} p{.46\textwidth}}
+\caption{消息语法与处理语义}\\\toprule
+值 & 名称 & 方向 & 正文与语义\\\midrule\endfirsthead
+\toprule 值 & 名称 & 方向 & 正文与语义\\\midrule\endhead
+1 & HELLO & C $\to$ S & $N$；TCP 建连后首条消息，用于登记昵称\\
+2 & WELCOME & S $\to$ C & $T\backslash n$欢迎说明；确认登录成功\\
+3 & CHAT & C $\to$ S & $M$；请求向所有在线用户发送消息\\
+4 & MESSAGE & S $\to$ C & $T\backslash nN\backslash nM$；群聊投递，包含发送者自己\\
+5 & PRIVATE & C $\to$ S & $D\backslash nM$；请求私聊\\
+6 & DIRECT & S $\to$ C & $T\backslash nN\backslash nD\backslash nM$；仅投递发送方与接收方，自聊仅投递一次\\
+7 & LIST & C $\to$ S & 空；请求在线用户列表\\
+8 & USERS & S $\to$ C & $T\backslash n$昵称列表，昵称之间用空格分隔\\
+9 & QUIT & C $\to$ S & 空；请求正常退出\\
+10 & BYE & S $\to$ C & $T\backslash n$退出原因；客户端停止会话\\
+11 & NOTICE & S $\to$ C & $T\backslash n$通知内容；通知其他用户上线或离线\\
+12 & ERROR & S $\to$ C & $T\backslash n$错误说明；可恢复错误保留连接，协议错误关闭连接\\\bottomrule
+\end{longtable}
+
+每个客户端的请求序号从 1 开始严格递增，包括 HELLO 和 QUIT。服务器维护全局发送标识，每向一个接收者发送一帧增加一次；所以同一群聊在不同客户端上的标识可以不同。私聊和欢迎消息只发给部分用户，序号间隙不代表消息丢失。标识为 32 位无符号数，理论上按模 $2^{32}$ 回绕；本实验运行量远小于此范围。
+
+\subsection{状态、异常与连接关闭}
+服务器会话状态分为 WAIT\_HELLO、ACTIVE 和 CLOSED。握手最长 5 秒，采用独立期限监视线程；即使对端每隔一段时间发送一个字节，也不能无限延长握手。握手完成后不设置空闲接收期限，允许用户长时间不发言。
+
+\begin{figure}[H]\centering
+\begin{tikzpicture}[node distance=17mm,>=Stealth,
+ state/.style={draw,rounded corners,align=center,minimum height=12mm,minimum width=35mm,font=\small}]
+\node[state] (wait) {WAIT\_HELLO\\等待首帧};
+\node[state,right=26mm of wait] (active) {ACTIVE\\处理业务请求};
+\node[state,below=18mm of active] (closed) {CLOSED\\移除用户、关闭套接字};
+\draw[->] (wait)--node[above,font=\small]{合法 HELLO}(active);
+\draw[->] (active) edge[loop right] node[right,font=\small,align=left]{聊天 / 列表\\可恢复错误} (active);
+\draw[->] (active)--node[right,font=\small]{QUIT / EOF / 协议错误 / 停机}(closed);
+\draw[->] (wait)|-node[pos=.25,left,font=\small,align=right]{超时 / 重名\\首帧错误}(closed);
+\end{tikzpicture}\caption{会话状态转换图}
+\end{figure}
+
+可恢复错误包括正文为空或过长、私聊格式错误、目标不在线；返回 ERROR 后仍可继续聊天。非法 magic、版本、类型、UTF-8、错误请求序号和状态不允许的类型属于协议错误，返回 ERROR 后关闭。握手超时通过 \src{shutdown} 中断接收，此时直接 EOF，不能保证再发送 ERROR。
+
+正常关闭时客户端发送 QUIT，服务器返回 BYE，再关闭连接并向其他用户广播离线通知。异常断线时清理用户表并释放昵称。服务器输入 \src{/quit} 时停止接入，对在线会话发送 BYE，调用 \src{shutdown} 唤醒阻塞接收，然后逐一等待线程结束，最后清理 Winsock。客户端输入 EOF 等价于退出请求；等待 BYE 最长 3 秒，避免异常对端导致永久等待。
+
+\subsection{典型交互时序}
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Stealth,font=\small,x=1cm,y=1cm]
+\node (a) at (0,0) {客户端 A};\node (s) at (5,0) {服务器};\node (b) at (10,0) {客户端 B};
+\draw[dashed] (0,-.4)--(0,-7);\draw[dashed] (5,-.4)--(5,-7);\draw[dashed] (10,-.4)--(10,-7);
+\draw[->] (0,-.8)--node[above]{TCP 建连，HELLO(A)}(5,-.8);
+\draw[->] (5,-1.5)--node[above]{WELCOME}(0,-1.5);
+\draw[->] (10,-2.2)--node[above]{TCP 建连，HELLO(B)}(5,-2.2);
+\draw[->] (5,-2.9)--node[above]{WELCOME}(10,-2.9);
+\draw[->] (5,-3.3)--node[above]{NOTICE：B 上线}(0,-3.3);
+\draw[->] (0,-4)--node[above]{CHAT：你好 Hello}(5,-4);
+\draw[->] (5,-4.6)--node[above]{MESSAGE}(0,-4.6);
+\draw[->] (5,-4.6)--node[above]{MESSAGE}(10,-4.6);
+\draw[->] (0,-5.3)--node[above]{QUIT}(5,-5.3);
+\draw[->] (5,-5.9)--node[above]{BYE，关闭连接}(0,-5.9);
+\draw[->] (5,-6.5)--node[above]{NOTICE：A 离线}(10,-6.5);
+\end{tikzpicture}\caption{登录、群聊和退出的正常时序}
+\end{figure}
+
+\section{程序设计与实现}
+\subsection{模块与核心函数}
+\begin{table}[H]\centering\small
+\begin{tabularx}{\textwidth}{p{.28\textwidth}X}\toprule
+模块 / 函数 & 职责与实现要点\\\midrule
+Winsock & RAII 管理 WSAStartup 与 WSACleanup；不是网络框架或套接字封装类\\
+send\_all / recv\_all & 基础 send / recv 循环，推进指针，直到长度满足或连接失败\\
+send\_frame / recv\_frame & 显式字节序转换、16 字节首部、长度检查、UTF-8 验证\\
+name\_ok / text\_ok & 昵称和正文业务校验\\
+serve & 单会话工作线程：握手、命令分支、异常清理、统计输出\\
+emit / broadcast & 在持有房间锁时发送完整帧；分配全局发送标识\\
+服务器 main & bind/listen、接入线程、停机协调和线程回收\\
+客户端 run / wmain & 命令解析与输入发送，接收线程负责异步显示\\
+line & 以 100 ms 轮询控制台输入，远端断开时无需再按回车\\
+tcp\_stats & WSAIoctl 读取本连接的 TCP 统计；不支持时明确标记 unavailable\\\bottomrule
+\end{tabularx}\end{table}
+
+\subsection{整体工作流程}
+\begin{figure}[H]\centering
+\begin{tikzpicture}[>=Stealth,node distance=7mm and 13mm,font=\small,
+ box/.style={draw,rounded corners,align=center,text width=49mm,minimum height=10mm}]
+\node[box] (init) {WSAStartup\\socket、bind、listen};
+\node[box,below=of init] (accept) {接入线程 select + accept\\检查 64 会话上限};
+\node[box,below=of accept] (thread) {创建会话线程\\接收并校验 HELLO};
+\node[box,below=of thread] (join) {锁定房间，检查昵称唯一性\\登记用户，发送欢迎与上线通知};
+\node[box,below=of join] (recv) {recv\_frame 收齐下一帧\\校验序号与业务参数};
+\node[box,below=of recv] (dispatch) {持锁分发群聊 / 私聊 / 列表\\或处理 QUIT / 协议错误};
+\node[box,below=of dispatch] (cleanup) {移除用户、通知离线、记录统计\\shutdown、closesocket，标记完成};
+\node[box,right=of recv] (stop) {主线程读取 /quit\\停止接入，发送 BYE\\shutdown 所有连接\\join 工作线程，WSACleanup};
+\draw[->] (init)--(accept);\draw[->] (accept)--(thread);\draw[->] (thread)--(join);
+\draw[->] (join)--(recv);\draw[->] (recv)--(dispatch);\draw[->] (dispatch)--(cleanup);
+\draw[->] (dispatch.west)--++(-.7,0)|-node[pos=.25,left]{继续}(recv.west);
+\draw[->,dashed] (stop)--(cleanup);
+\end{tikzpicture}\caption{服务器整体流程与停机协调}
+\end{figure}
+
+\subsection{TCP 分帧的核心代码}
+\begin{code}
+inline bool recv_all(SOCKET s, char* p, size_t n) {
+    while (n) {
+        int k = recv(s, p, static_cast<int>(n), 0);
+        if (k <= 0) return false;
+        p += k;
+        n -= k;
+    }
+    return true;
+}
+// Validate magic/version/type/length BEFORE resizing the body.
+// Read the body with recv_all again, never with one recv call.
+\end{code}
+该循环不会把短读误判为消息结束。长度为零时不发起接收，正好支持 LIST 和 QUIT 的空正文。
+对应发送循环也不能假定 \src{send} 一定发送全部数据。网络字节序使用 \src{htonl/ntohl}，而不是依赖主机端序。
+
+\subsection{线程同步和资源生命周期}
+服务器主线程管理命令输入，接入线程接受连接，每个连接有一个接收线程，握手期间临时增加一个期限监视线程。客户端主线程处理输入，接收线程显示服务器消息。
+在线用户表、昵称、活跃状态和服务器发送标识受同一房间互斥锁保护。
+接收与等待用户输入时不占用房间锁；只有状态变更和分发发送时持锁。该简单模型确保多个工作线程不会在同一客户端 TCP 字节流中交叉写入帧，也保证各接收者看到一致的群聊次序。
+
+\begin{code}
+std::lock_guard<std::mutex> lock(room);
+// Validate request sequence and dispatch under the same lock.
+if (f.type == Chat) {
+    // First validate the UTF-8 text and its byte length.
+    broadcast(Message, s->name + "\n" + f.body);
+}
+\end{code}
+
+发送设置 2 秒超时，单个慢接收者不能永久阻塞房间；但全局锁内发送仍可能在多个慢连接下累积等待，不适合大规模生产服务。并发会话上限为 64；已完成线程在下一次接入时回收，服务器停机时回收剩余线程。会话工作线程负责关闭自身套接字，协调线程仅调用 shutdown，避免重复关闭和句柄复用错误。
+
+\section{实验步骤与测试结果}
+\subsection{构建与基本操作}
+在工程根目录的 PowerShell 中执行：
+\begin{code}
+.\lab01\build.ps1
+.\lab01\bin\chat_server.exe 127.0.0.1 9001
+\end{code}
+随后分别打开三个终端运行客户端（昵称可替换为中文）：
+\begin{code}
+.\lab01\bin\chat_client.exe 127.0.0.1 9001 Alice
+.\lab01\bin\chat_client.exe 127.0.0.1 9001 Bob
+.\lab01\bin\chat_client.exe 127.0.0.1 9001 Carol
+\end{code}
+直接输入文字为群聊；\src{/msg Bob hello} 为私聊；\src{/list} 查看在线用户；\src{/help} 查看提示；\src{/quit} 正常退出。服务端也通过 \src{/quit} 停机。
+跨主机使用服务器实际局域网 IPv4 地址，并由操作者按实际网络策略允许该端口；本次自动化验证的地址均为回环地址。
+
+\subsection{功能、边界与异常测试}
+执行 \src{python lab01/tests/integration.py} 启动真实 C++ 可执行程序并驱动协议请求，结果写入 evidence 目录。测试不是替身服务，也没有绕开服务器业务实现。
+
+\begin{longtable}{c p{.56\textwidth} p{.22\textwidth}}
+\caption{黑盒集成测试覆盖范围}\\\toprule
+编号 & 操作及验证目标 & 结果\\\midrule\endfirsthead
+\toprule 编号 & 操作及验证目标 & 结果\\\midrule\endhead
+01 & 三用户中文昵称、中英文及表情群聊、在线列表 & 通过\\
+02 & 私聊双方可见、第三方无消息、目标不在线 & 通过\\
+03 & 首帧逐字节发送，三帧合并发送 & 通过\\
+04 & 拒绝重复昵称，退出后可复用 & 通过\\
+05 & 非法 magic、版本、类型、过大长度、UTF-8 & 通过\\
+06 & 错误序号、客户端发送服务器专用类型 & 通过\\
+07 & 空正文、4097 字节拒绝，4096 字节通过 & 通过\\
+08 & 突然断线后的通知、昵称释放 & 通过\\
+09 & 只发送一个首部字节后超时；半帧后 EOF & 通过\\
+10 & 四用户并发，逐条校验完整性、重复与次序 & 通过\\
+11 & 真实客户端中文参数、群聊、列表、自聊、退出 & 通过\\
+12 & 客户端不输入时服务器关闭，客户端自行退出 & 通过\\
+13 & 同一昵称连续连接、退出 80 次 & 通过\\
+14 & 64 会话通过，第 65 条连接及时关闭 & 通过\\\bottomrule
+\end{longtable}
+
+本次记录共 \TestCount{} 项测试，失败 \FailureCount{} 项、错误 \ErrorCount{} 项，总耗时 \TestDuration{} 秒。
+测试时间为 \TestTimestamp{}。完整结果为 \src{evidence/test-results.txt}，可机器读取的结果为 \src{evidence/results.json}。
+
+\subsection{真实客户端输出}
+以下为测试 11 中真实客户端进程的 UTF-8 标准输出排版，不是人工拼接的截图。该过程由管道输入驱动；人工交互界面的输入行为仍应在展示前现场试运行。
+\VerbatimInput[fontsize=\small,breaklines=true,frame=single]{client-transcript.txt}
+
+\subsection{多人并发完整性结果}
+四个客户端各发送 300 条唯一编号消息，总计 1200 条。每条广播包含发送者自己，故预期投递总量为
+\[
+N_{\mathrm{expected}}=N_{\mathrm{clients}}\times N_{\mathrm{messages}}
+=4\times1200=4800.
+\]
+测试为每个接收者建立独立读取任务，以“发送者昵称 + 消息编号 + 正文”逐条比较预期集合，同时验证没有重复、所有接收者观察到的广播正文次序相同。
+
+\begin{table}[H]\centering
+\caption{回环环境中的应用层完整性实测}
+\begin{tabular}{lr}\toprule 指标 & 实测值\\\midrule
+并发客户端数 & \ClientCount\\
+发送消息数 & \SentCount\\
+预期投递数 & \ExpectedCount\\
+实际收到数 & \ReceivedCount\\
+缺失投递数 / 重复投递数 & \MissingCount{} / \DuplicateCount\\
+发送至全部收齐耗时 & \StressDuration{} s\\\bottomrule\end{tabular}
+\end{table}
+该耗时只反映本次本机自动化测试，不是局域网吞吐率测试，也不应外推为远程链路性能。
+
+\section{数据丢失与 TCP 观测}\label{sec:loss}
+\subsection{按连接统计的观测方法}
+服务器在关闭套接字之前，通过基础 Winsock 的 \src{WSAIoctl(SIO_TCP_INFO)} 获取 \src{TCP_INFO_v0}。
+记录本端发送、接收字节数、重传字节数、重复 ACK 和重传超时事件。字段含义参考 Microsoft 文档\cite{tcpinfo}。
+查询失败时输出 unavailable 及错误码，不将查询失败记为零。
+
+\begin{table}[H]\centering\small
+\caption{并发测试中服务器四条连接的 TCP 统计}
+\input{tcp-table.tex}
+\end{table}
+
+本次四条服务器连接均未记录发送方向的重传字节、重复 ACK 或重传超时事件，应用层的 4800 次预期投递也全部完成。因此，可以报告\textbf{本次回环测试未观察到应用层消息缺失，服务器发送方向未记录 TCP 重传}。
+不能将其写成“网络一定没有丢包”：TCP 可能通过重传掩盖底层丢失；本端统计的发送方向不能代表对端发送方向；回环测试也没有经过真实网线或无线信道。
+
+\subsection{抓包方法与证据范围}
+\input{capture-observation.tex}
+
+独立复现时，可使用安装 Npcap 的 Wireshark 在回环适配器抓取本机聊天，或在真实网卡抓取跨主机聊天，显示过滤器为 \src{tcp.port == 9001}。
+分析建连的 SYN/SYN-ACK/ACK、聊天载荷、正常退出的连接关闭，并检查 \src{tcp.analysis.retransmission}、\src{tcp.analysis.fast_retransmission}、\src{tcp.analysis.lost_segment} 和 \src{tcp.analysis.duplicate_ack}。
+这些标签是分析器的推断；抓包点本身漏采、乱序或同一包在多个组件重复记录都可能影响判断。
+Pktmon 的多组件副本不能直接视为 TCP 重传；转换 PCAPNG 时应选定单个组件并按 TCP 序号与确认号核对。
+
+\section{遇到的问题与解决方法}
+\begin{enumerate}
+\item \textbf{旧编译器不支持标准多线程。} 默认 MinGW 缺少可用的标准线程实现，改用已安装的 MSVC C++17。提供 MSVC 自动发现脚本和现代 MinGW-w64 的备用入口，不依赖旧 IDE 工程。
+\item \textbf{TCP 消息可能拆分或合并。} 使用 16 字节固定首部与长度字段，循环收齐；以逐字节首帧和合并多帧验证处理结果。
+\item \textbf{中文昵称受到系统代码页影响。} Windows 参数使用 wmain，显式从 UTF-16 转换到 UTF-8，网络接收时进行严格 UTF-8 校验。
+\item \textbf{多个线程可能交叉写一条 TCP 流。} 将共享状态变更和完整帧发送纳入房间互斥锁，验证四客户端广播正文的观察次序相同。
+\item \textbf{远端关闭后客户端仍可能等待输入。} 控制台输入以 100 ms 轮询运行状态，接收线程在 EOF 或 BYE 后清除运行标志，主线程退出。
+\item \textbf{握手慢速发送拖延资源回收。} 使用总时限监视，而不是每次 recv 重新开始计时；5 秒后 shutdown 唤醒接收。
+\item \textbf{对超时关闭的错误响应作了错误假设。} 初始测试要求超时后收到 ERROR，但 shutdown 已关闭收发，正确可观察结果是 EOF。将断言修正为期限内关闭，并保留对非法完整首部返回 ERROR 的验证。
+\end{enumerate}
+
+\section{结论与局限}
+本实验完成了基于基础 Winsock API 的 C++ 多线程 TCP 聊天程序，覆盖中英文、多人群聊、一对一私聊、时间戳、在线列表和正常退出，并通过 \TestCount{} 项黑盒测试。应用层逐条校验结果与按连接 TCP 统计共同支持本次实验的观测结论。
+
+当前采用全局锁串行分发，适用于有限人数的教学实验；面对多个慢接收者会产生累积等待。协议没有加密、账户认证、离线消息或持久化；客户端名称只是在当前房间内唯一的显示标识。自动化测试在本机回环完成，不能替代实验室跨主机环境的现场运行。
+
+\clearpage
+\addcontentsline{toc}{section}{参考文献}
+\begin{thebibliography}{9}
+\bibitem{tcpinfo} Microsoft. TCP\_INFO\_v0 structure (mstcpip.h).
+\url{https://learn.microsoft.com/en-us/windows/win32/api/mstcpip/ns-mstcpip-tcp_info_v0}.
+\bibitem{winsock} Microsoft. Windows Sockets 2.
+\url{https://learn.microsoft.com/en-us/windows/win32/winsock/windows-sockets-start-page-2}.
+\bibitem{pktmon} Microsoft. Packet Monitor (Pktmon) command syntax.
+\url{https://learn.microsoft.com/en-us/windows-server/networking/technologies/pktmon/pktmon-syntax}.
+\end{thebibliography}
+\end{document}

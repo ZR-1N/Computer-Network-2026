@@ -1,4 +1,4 @@
-param([ValidateSet('MSVC','MinGW')][string]$Compiler = 'MSVC')
+﻿param([ValidateSet('MSVC','MinGW')][string]$Compiler = 'MSVC')
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 New-Item -ItemType Directory -Force -Path "$root/bin" | Out-Null

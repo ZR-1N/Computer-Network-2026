@@ -1,0 +1,23 @@
+
+在用户批准 Windows UAC 提升权限后，使用系统 Pktmon 对 TCP 9001 端口进行独立录制，
+保存原始 \src{chat.etl}、原始转换结果 \src{chat.pcapng}、
+仅丢弃事件的 \src{chat-drops.pcapng} 和文本 \src{chat-packets.txt}。
+该次负载为 3 个用户、20 条消息、60 次经正文断言验证的投递，全部成功。
+原始跟踪头的 EventsLost 和 BuffersLost 均为 0，表示跟踪系统未报告事件缓冲丢失。
+
+\textbf{实际捕获并非“没有丢弃事件”。} 本次回环抓包点没有记录正常路径数据包，
+但记录了 2 个 \src{INET: FIN-WAIT2} 丢弃事件。对保存的两个 IP 数据报逐字节解析后，
+均为 127.0.0.1 上客户端临时端口发往服务器 9001 的 TCP 段，IP 总长度 40 字节，
+TCP 标志为 \src{0x10}（仅 ACK），应用载荷为 0 字节。它们出现在 QUIT/BYE 关闭阶段，
+所以这两条记录体现的是本机 TCP 状态处理对控制段的丢弃，不能直接等同于聊天正文丢失。
+该次服务端三个连接的重传字节也均为 0。
+
+默认 \src{etl2pcap} 不包含 drop 事件，因此其结果只有文件头；必须加
+\src{--drop-only} 才能导出这两个真实数据报。本机导出器的接口描述标为 Ethernet，
+而记录内容是原始 IPv4；提供的 \src{chat-drops-raw.pcap} 仅将相同原始字节放入
+正确的 LINKTYPE\_RAW 分析容器，原始 ETL 与 PCAPNG 均保留，便于复核。
+结构化逐包结果见 \src{capture-summary.json}，原始丢弃原因节选见 \src{capture-excerpt.txt}。
+
+\textbf{观测限制：} 正常回环流量没有被本抓包点完整记录，因此不能用
+“2 个丢弃记录 / 全部 TCP 段数”计算丢包率，也不能从空的普通 PCAPNG 推导零丢包。
+本次结论分别保留“应用消息未缺失”“本端发送未记录重传”与“关闭阶段观察到两个无载荷 ACK 被丢弃”三项事实。
