@@ -1,0 +1,17 @@
+Npcap version 1.89, based on libpcap version 1.10.7 (64-bit time_t)
+离线复核已开始，按 Q 或 Ctrl+C 退出。Type字段为偏移12-13，After为偏移14。
+ No. Time            SRC-MAC           DST-MAC           Type   After Cap/Wire Protocol
+   1 00:37:07.225884 F8:59:E3:E3:B3:7E 00:00:5E:00:01:FE 0x0800 0x45 74/74 IPv4
+     10.130.33.54 -> 10.130.0.1 IP.protocol=1
+   2 00:37:07.228329 00:00:5E:00:01:FE F8:59:E3:E3:B3:7E 0x0800 0x45 74/74 IPv4
+     10.130.0.1 -> 10.130.33.54 IP.protocol=1
+   3 00:37:08.231722 F8:59:E3:E3:B3:7E 00:00:5E:00:01:FE 0x0800 0x45 74/74 IPv4
+     10.130.33.54 -> 10.130.0.1 IP.protocol=1
+   4 00:37:08.234218 00:00:5E:00:01:FE F8:59:E3:E3:B3:7E 0x0800 0x45 74/74 IPv4
+     10.130.0.1 -> 10.130.33.54 IP.protocol=1
+   5 00:37:09.240502 F8:59:E3:E3:B3:7E 00:00:5E:00:01:FE 0x0800 0x45 74/74 IPv4
+     10.130.33.54 -> 10.130.0.1 IP.protocol=1
+   6 00:37:09.242921 00:00:5E:00:01:FE F8:59:E3:E3:B3:7E 0x0800 0x45 74/74 IPv4
+     10.130.0.1 -> 10.130.33.54 IP.protocol=1
+捕获结束: 6 帧，短帧=0，截断=0，耗时=0.0014816 秒，原因=eof
+Npcap stats: unavailable (offline captures have no live driver statistics)

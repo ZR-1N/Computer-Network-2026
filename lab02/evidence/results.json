@@ -1,0 +1,38 @@
+{
+  "time": "2026-10-22 00:37:12 +0800",
+  "os": "Windows-11-10.0.26200-SP0",
+  "parser_tests": 24,
+  "integration_tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 6.797,
+  "metrics": {
+    "device": {
+      "event": "device",
+      "index": 6,
+      "name": "\\Device\\NPF_{452CA9EC-A239-4A0C-A163-A42D1FB62651}",
+      "description": "MediaTek Wi-Fi 6 MT7921 Wireless LAN Card",
+      "ipv4": [
+        "10.130.33.54"
+      ],
+      "flags": 30
+    },
+    "runtime": "Npcap version 1.89, based on libpcap version 1.10.7 (64-bit time_t)",
+    "real_capture": {
+      "packets": 6,
+      "summary": {
+        "event": "summary",
+        "received": 6,
+        "short_frames": 0,
+        "truncated": 0,
+        "elapsed_seconds": 4.01249,
+        "reason": "time",
+        "stats_available": true,
+        "ps_recv": 6,
+        "ps_drop": 0,
+        "ps_ifdrop": 0
+      },
+      "filter": "icmp and host 10.130.0.1"
+    }
+  }
+}

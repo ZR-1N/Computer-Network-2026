@@ -1,0 +1,6 @@
+{
+  "interface_index": 9,
+  "interface_alias": "WLAN",
+  "ipv4": "10.130.33.54",
+  "gateway": "10.130.0.1"
+}

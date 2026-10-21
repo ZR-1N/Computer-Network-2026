@@ -1,0 +1,10 @@
+
+Pinging 10.130.0.1 with 32 bytes of data:
+Reply from 10.130.0.1: bytes=32 time=2ms TTL=255
+Reply from 10.130.0.1: bytes=32 time=2ms TTL=255
+Reply from 10.130.0.1: bytes=32 time=2ms TTL=255
+
+Ping statistics for 10.130.0.1:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 2ms, Average = 2ms

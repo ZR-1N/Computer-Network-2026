@@ -1,0 +1,15 @@
+{"event":"runtime","version":"Npcap version 1.89, based on libpcap version 1.10.7 (64-bit time_t)"}
+{"event":"device","index":1,"name":"\\Device\\NPF_{271BA558-CD63-4ADE-8218-11F9D62D384A}","description":"WAN Miniport (Network Monitor)","ipv4":[],"flags":22}
+{"event":"device","index":2,"name":"\\Device\\NPF_{CD42980E-3759-417F-ACD7-6D5ED4C36304}","description":"WAN Miniport (IPv6)","ipv4":[],"flags":22}
+{"event":"device","index":3,"name":"\\Device\\NPF_{1BECAF79-F496-4656-B98F-54FAA5B96CA1}","description":"WAN Miniport (IP)","ipv4":[],"flags":22}
+{"event":"device","index":4,"name":"\\Device\\NPF_{5F8441FC-F64A-40AE-887E-0EC4C43D3B4B}","description":"Hyper-V Virtual Ethernet Adapter","ipv4":["172.30.240.1"],"flags":22}
+{"event":"device","index":5,"name":"\\Device\\NPF_{FE9975D6-D60B-4781-973C-AC501E6F403E}","description":"Bluetooth Device (Personal Area Network)","ipv4":["169.254.48.238"],"flags":46}
+{"event":"device","index":6,"name":"\\Device\\NPF_{452CA9EC-A239-4A0C-A163-A42D1FB62651}","description":"MediaTek Wi-Fi 6 MT7921 Wireless LAN Card","ipv4":["10.130.33.54"],"flags":30}
+{"event":"device","index":7,"name":"\\Device\\NPF_{7A70EA26-BC1B-4623-A4C6-B634A8DA8DB7}","description":"VMware Virtual Ethernet Adapter for VMnet8","ipv4":["192.168.235.1"],"flags":22}
+{"event":"device","index":8,"name":"\\Device\\NPF_{5C1DC562-D253-47B2-8DDB-3F8BD154254A}","description":"VMware Virtual Ethernet Adapter for VMnet1","ipv4":["192.168.17.1"],"flags":22}
+{"event":"device","index":9,"name":"\\Device\\NPF_{B762350F-C51D-4BF2-8277-112C6A0F3A01}","description":"Microsoft Wi-Fi Direct Virtual Adapter #2","ipv4":["169.254.94.160"],"flags":46}
+{"event":"device","index":10,"name":"\\Device\\NPF_{1825F922-02BC-4037-B3A8-B3AA5B95F96A}","description":"Microsoft Wi-Fi Direct Virtual Adapter","ipv4":["169.254.117.27"],"flags":46}
+{"event":"device","index":11,"name":"\\Device\\NPF_Loopback","description":"Adapter for loopback traffic capture","ipv4":["127.0.0.1"],"flags":55}
+{"event":"device","index":12,"name":"\\Device\\NPF_{6057D449-FEEB-45D1-A1C5-ED3FD5917534}","description":"TAP-Windows Adapter V9","ipv4":["169.254.44.242"],"flags":38}
+{"event":"device","index":13,"name":"\\Device\\NPF_{D786FE11-EC27-43BC-A544-EF584F9B627D}","description":"Wintun Userspace Tunnel","ipv4":["169.254.252.41"],"flags":38}
+{"event":"device","index":14,"name":"\\Device\\NPF_{D2434439-A07E-4865-8E50-40BFAF6C9CFE}","description":"Realtek PCIe GbE Family Controller","ipv4":["192.168.137.101","169.254.222.150"],"flags":38}

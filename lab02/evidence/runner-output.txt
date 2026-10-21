@@ -1,0 +1,55 @@
+test_01_enumerate_real_devices (__main__.CaptureTests.test_01_enumerate_real_devices) ... ok
+test_02_offline_boundaries_and_vlan (__main__.CaptureTests.test_02_offline_boundaries_and_vlan) ... ok
+test_03_reject_non_ethernet_without_fake_mac (__main__.CaptureTests.test_03_reject_non_ethernet_without_fake_mac) ... ok
+test_04_invalid_cli_and_device (__main__.CaptureTests.test_04_invalid_cli_and_device) ... ok
+test_05_invalid_bpf_and_missing_input (__main__.CaptureTests.test_05_invalid_bpf_and_missing_input) ... ok
+test_06_idle_time_limit_without_traffic (__main__.CaptureTests.test_06_idle_time_limit_without_traffic) ... ok
+test_07_real_capture_and_byte_comparison (__main__.CaptureTests.test_07_real_capture_and_byte_comparison) ... ok
+test_08_replay_filter_and_chinese_filename (__main__.CaptureTests.test_08_replay_filter_and_chinese_filename) ... ok
+test_09_count_limit (__main__.CaptureTests.test_09_count_limit) ... ok
+test_10_ctrl_break_normal_exit (__main__.CaptureTests.test_10_ctrl_break_normal_exit) ... ok
+test_11_default_no_disk_capture (__main__.CaptureTests.test_11_default_no_disk_capture) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 6.606s
+
+OK
+
+{
+  "time": "2026-10-22 00:37:12 +0800",
+  "os": "Windows-11-10.0.26200-SP0",
+  "parser_tests": 24,
+  "integration_tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "duration_seconds": 6.797,
+  "metrics": {
+    "device": {
+      "event": "device",
+      "index": 6,
+      "name": "\\Device\\NPF_{452CA9EC-A239-4A0C-A163-A42D1FB62651}",
+      "description": "MediaTek Wi-Fi 6 MT7921 Wireless LAN Card",
+      "ipv4": [
+        "10.130.33.54"
+      ],
+      "flags": 30
+    },
+    "runtime": "Npcap version 1.89, based on libpcap version 1.10.7 (64-bit time_t)",
+    "real_capture": {
+      "packets": 6,
+      "summary": {
+        "event": "summary",
+        "received": 6,
+        "short_frames": 0,
+        "truncated": 0,
+        "elapsed_seconds": 4.01249,
+        "reason": "time",
+        "stats_available": true,
+        "ps_recv": 6,
+        "ps_drop": 0,
+        "ps_ifdrop": 0
+      },
+      "filter": "icmp and host 10.130.0.1"
+    }
+  }
+}
